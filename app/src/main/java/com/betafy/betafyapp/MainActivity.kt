@@ -45,4 +45,4 @@ fun MainScreenPreview() {
     MaterialTheme {
         MainScreen()
     }
-}
+}это не код
