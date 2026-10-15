@@ -1,6 +1,9 @@
 plugins {
+    id("com.google.gms.google-services")
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -37,6 +40,13 @@ android {
 }
 
 dependencies {
+    implementation(libs.navigation.compose)
+    implementation(libs.hilt.navigation.compose)
+    implementation(project(":feature:auth:presentation"))
+    implementation(project(":feature:auth:domain"))
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+    implementation(project(":feature:auth:di"))
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)

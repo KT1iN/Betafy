@@ -17,5 +17,9 @@ android {
 }
 
 dependencies {
+    implementation(platform("com.google.firebase:firebase-bom:35.0.0"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
+    implementation(libs.kotlinx.coroutines.play.services)
     implementation(project(":feature:auth:domain"))
 }
