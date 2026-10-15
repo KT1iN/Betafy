@@ -17,7 +17,7 @@ android {
 }
 
 dependencies {
-    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-database")
     implementation(platform("com.google.firebase:firebase-bom:35.0.0"))
     implementation(project(":feature:profile:domain"))
 }

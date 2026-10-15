@@ -1,15 +1,17 @@
 package com.betafy.feature.auth.data
 
 import com.betafy.feature.auth.domain.AuthRepository
-import com.betafy.feature.auth.domain.UserRole
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FieldValue
-import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ServerValue
+import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.tasks.await
+import kotlinx.coroutines.withTimeout
 
 class FirebaseAuthRepository(
     private val auth: FirebaseAuth,
-    private val firestore: FirebaseFirestore
+    private val database: FirebaseDatabase
 ) : AuthRepository {
 
     override val currentUserId: String?
@@ -19,42 +21,47 @@ class FirebaseAuthRepository(
         email: String,
         password: String,
         username: String,
-        role: UserRole
+        fullName: String
     ): Result<String> = runCatching {
-        val uid = auth.createUserWithEmailAndPassword(email, password).await().user?.uid
-            ?: error("User id is missing")
+        val firebaseUser = try {
+            auth.createUserWithEmailAndPassword(email, password).await().user
+        } catch (e: FirebaseAuthUserCollisionException) {
+            throw IllegalStateException("Эта почта уже зарегистрирована")
+        } ?: error("User id is missing")
 
-        val user = hashMapOf(
-            "email" to email,
-            "username" to username,
-            "avatar_url" to null,
-            "created_at" to FieldValue.serverTimestamp()
-        )
+        val uid = firebaseUser.uid
+        val nickKey = username.lowercase()
+        val root = database.reference
 
-        val profile = when (role) {
-            UserRole.WRITER -> hashMapOf(
-                "bio" to "",
-                "experience_level" to "",
-                "preferred_language" to ""
-            )
-            UserRole.BETA_READER -> hashMapOf(
-                "bio" to "",
-                "experience_level" to "",
-                "preferred_language" to "",
-                "max_word_count" to 0,
-                "is_available" to false,
-                "cooperation_type" to "",
-                "price" to 0.0
-            )
+        try {
+            withTimeout(15_000) {
+                val taken = root.child("usernames").child(nickKey).get().await().exists()
+                if (taken) throw IllegalStateException("Этот ник уже занят")
+
+                val user = mapOf(
+                    "email" to email,
+                    "username" to username,
+                    "fullName" to fullName,
+                    "avatarUrl" to "",
+                    "createdAt" to ServerValue.TIMESTAMP
+                )
+                root.updateChildren(
+                    mapOf(
+                        "Users/$uid" to user,
+                        "usernames/$nickKey" to uid
+                    )
+                ).await()
+            }
+        } catch (e: Exception) {
+            runCatching { withTimeout(5_000) { firebaseUser.delete().await() } }
+            auth.signOut()
+            if (e is TimeoutCancellationException) {
+                throw IllegalStateException("Нет связи с базой. Проверьте интернет или включите VPN")
+            }
+            throw e
         }
 
-        val profileCollection = if (role == UserRole.WRITER) "writer_profiles" else "beta_reader_profiles"
-
-        firestore.batch().apply {
-            set(firestore.collection("users").document(uid), user)
-            set(firestore.collection(profileCollection).document(uid), profile)
-        }.commit().await()
-
+        auth.signOut()
         uid
     }
 

@@ -40,6 +40,10 @@ android {
 }
 
 dependencies {
+    implementation(libs.navigation.compose)
+    implementation(libs.hilt.navigation.compose)
+    implementation(project(":feature:auth:presentation"))
+    implementation(project(":feature:auth:domain"))
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     implementation(project(":feature:auth:di"))
