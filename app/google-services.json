@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "266621576055",
+    "project_id": "betafy-48c29",
+    "storage_bucket": "betafy-48c29.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266621576055:android:f7f8770fad670369aa7772",
+        "android_client_info": {
+          "package_name": "com.betafy.betafyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkaGs8tkVL4PuSzXA34vs8trJ1yrS4U-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
