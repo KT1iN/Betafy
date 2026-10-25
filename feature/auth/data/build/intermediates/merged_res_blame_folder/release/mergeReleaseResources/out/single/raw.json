@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/raw/firebase_common_keep.xml",
+        "source": "com.betafy.feature.auth.data-firebase-common-23.0.0-10:/raw/firebase_common_keep.xml"
+    }
+]

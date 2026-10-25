@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/layout/notification_template_part_time.xml",
+        "source": "com.betafy.feature.auth.data-core-1.9.0-7:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/layout/notification_template_part_chronometer.xml",
+        "source": "com.betafy.feature.auth.data-core-1.9.0-7:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/layout/custom_dialog.xml",
+        "source": "com.betafy.feature.auth.data-core-1.9.0-7:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/layout/browser_actions_context_menu_row.xml",
+        "source": "com.betafy.feature.auth.data-browser-1.4.0-2:/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/layout/browser_actions_context_menu_page.xml",
+        "source": "com.betafy.feature.auth.data-browser-1.4.0-2:/layout/browser_actions_context_menu_page.xml"
+    }
+]

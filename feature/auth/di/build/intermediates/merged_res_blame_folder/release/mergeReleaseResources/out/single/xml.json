@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.di-release-25:/xml/image_share_filepaths.xml",
+        "source": "com.betafy.feature.auth.di-browser-1.4.0-2:/xml/image_share_filepaths.xml"
+    }
+]

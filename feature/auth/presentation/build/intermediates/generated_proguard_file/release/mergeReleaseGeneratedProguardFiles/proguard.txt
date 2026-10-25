@@ -1,0 +1,4 @@
+-keep,allowobfuscation,allowshrinking class com.betafy.feature.auth.presentation.AuthViewModel
+-keep,allowobfuscation,allowshrinking class com.betafy.feature.auth.presentation.AuthViewModel
+-keep,allowobfuscation,allowshrinking class com.betafy.feature.auth.presentation.SessionViewModel
+-keep,allowobfuscation,allowshrinking class com.betafy.feature.auth.presentation.SessionViewModel

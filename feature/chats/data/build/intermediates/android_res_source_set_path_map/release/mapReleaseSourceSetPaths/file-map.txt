@@ -1,0 +1,9 @@
+com.betafy.feature.chats.data-pngs-0 /home/e/AndroidStudioProjects/BetafyApp/feature/chats/data/build/generated/res/pngs/release
+com.betafy.feature.chats.data-updated_navigation_xml-1 /home/e/AndroidStudioProjects/BetafyApp/feature/chats/data/build/generated/updated_navigation_xml/release
+com.betafy.feature.chats.data-mergeReleaseResources-2 /home/e/AndroidStudioProjects/BetafyApp/feature/chats/data/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.betafy.feature.chats.data-mergeReleaseResources-3 /home/e/AndroidStudioProjects/BetafyApp/feature/chats/data/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.betafy.feature.chats.data-release-4 /home/e/AndroidStudioProjects/BetafyApp/feature/chats/data/build/intermediates/merged_res/release/mergeReleaseResources
+com.betafy.feature.chats.data-release-5 /home/e/AndroidStudioProjects/BetafyApp/feature/chats/data/build/intermediates/packaged_res/release/packageReleaseResources
+com.betafy.feature.chats.data-main-6 /home/e/AndroidStudioProjects/BetafyApp/feature/chats/data/src/main/res
+com.betafy.feature.chats.data-release-7 /home/e/AndroidStudioProjects/BetafyApp/feature/chats/data/src/release/res
+gradleHome-0 /home/e/.gradle
