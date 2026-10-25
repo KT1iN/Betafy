@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.betafy.feature.profile.data-release-12:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/home/e/.gradle/caches/9.6.0/transforms/74b0d5183cb62086f36eddc40e0683ae/transformed/core-1.9.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.betafy.feature.profile.data-mergeReleaseResources-10:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/home/e/.gradle/caches/9.6.0/transforms/74b0d5183cb62086f36eddc40e0683ae/transformed/core-1.9.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.betafy.feature.profile.data-release-12:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.betafy.feature.profile.data-core-1.9.0-5:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.betafy.feature.profile.data-release-12:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.betafy.feature.profile.data-core-1.9.0-5:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.betafy.feature.profile.data-release-12:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.betafy.feature.profile.data-core-1.9.0-5:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.betafy.feature.profile.data-release-12:/layout-v21/notification_action.xml",
+        "source": "com.betafy.feature.profile.data-core-1.9.0-5:/layout-v21/notification_action.xml"
+    }
+]

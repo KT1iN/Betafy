@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.di-release-25:/drawable-anydpi-v24/ic_passkey.xml",
+        "source": "com.betafy.feature.auth.di-credentials-1.2.0-rc01-16:/drawable-anydpi-v24/ic_passkey.xml"
+    }
+]

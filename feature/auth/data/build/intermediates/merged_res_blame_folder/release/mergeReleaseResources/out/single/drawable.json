@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/notification_icon_background.xml",
+        "source": "com.betafy.feature.auth.data-core-1.9.0-7:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/notification_bg.xml",
+        "source": "com.betafy.feature.auth.data-core-1.9.0-7:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/notification_bg_low.xml",
+        "source": "com.betafy.feature.auth.data-core-1.9.0-7:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/notification_tile_bg.xml",
+        "source": "com.betafy.feature.auth.data-core-1.9.0-7:/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_text_light.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "com.betafy.feature.auth.data-play-services-base-18.9.0-9:/drawable/common_google_signin_btn_text_dark_focused.xml"
+    }
+]

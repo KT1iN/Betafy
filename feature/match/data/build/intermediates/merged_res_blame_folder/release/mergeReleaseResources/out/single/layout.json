@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.betafy.feature.match.data-release-12:/layout/notification_template_part_time.xml",
+        "source": "com.betafy.feature.match.data-core-1.9.0-5:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.betafy.feature.match.data-release-12:/layout/notification_template_part_chronometer.xml",
+        "source": "com.betafy.feature.match.data-core-1.9.0-5:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.betafy.feature.match.data-release-12:/layout/custom_dialog.xml",
+        "source": "com.betafy.feature.match.data-core-1.9.0-5:/layout/custom_dialog.xml"
+    }
+]

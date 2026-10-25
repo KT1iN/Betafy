@@ -1,0 +1,1 @@
+-keep,allowobfuscation,allowshrinking class com.betafy.feature.auth.presentation.SessionViewModel

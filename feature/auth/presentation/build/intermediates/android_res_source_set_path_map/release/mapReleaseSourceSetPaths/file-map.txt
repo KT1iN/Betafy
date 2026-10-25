@@ -1,0 +1,9 @@
+com.betafy.feature.auth.presentation-pngs-0 /home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/build/generated/res/pngs/release
+com.betafy.feature.auth.presentation-updated_navigation_xml-1 /home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/build/generated/updated_navigation_xml/release
+com.betafy.feature.auth.presentation-mergeReleaseResources-2 /home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.betafy.feature.auth.presentation-mergeReleaseResources-3 /home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.betafy.feature.auth.presentation-release-4 /home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/build/intermediates/merged_res/release/mergeReleaseResources
+com.betafy.feature.auth.presentation-release-5 /home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/build/intermediates/packaged_res/release/packageReleaseResources
+com.betafy.feature.auth.presentation-main-6 /home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/src/main/res
+com.betafy.feature.auth.presentation-release-7 /home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/src/release/res
+gradleHome-0 /home/e/.gradle

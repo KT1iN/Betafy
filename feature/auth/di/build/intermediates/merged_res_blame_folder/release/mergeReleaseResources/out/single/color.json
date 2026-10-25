@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.di-release-25:/color/common_google_signin_btn_text_dark.xml",
+        "source": "com.betafy.feature.auth.di-play-services-base-18.9.0-11:/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.di-release-25:/color/common_google_signin_btn_tint.xml",
+        "source": "com.betafy.feature.auth.di-play-services-base-18.9.0-11:/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.di-release-25:/color/common_google_signin_btn_text_light.xml",
+        "source": "com.betafy.feature.auth.di-play-services-base-18.9.0-11:/color/common_google_signin_btn_text_light.xml"
+    }
+]

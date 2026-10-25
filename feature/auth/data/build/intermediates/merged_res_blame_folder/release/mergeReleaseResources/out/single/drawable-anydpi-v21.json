@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable-anydpi-v21/ic_password.xml",
+        "source": "com.betafy.feature.auth.data-credentials-1.2.0-rc01-11:/drawable-anydpi-v21/ic_password.xml"
+    },
+    {
+        "merged": "com.betafy.feature.auth.data-release-17:/drawable-anydpi-v21/ic_other_sign_in.xml",
+        "source": "com.betafy.feature.auth.data-credentials-1.2.0-rc01-11:/drawable-anydpi-v21/ic_other_sign_in.xml"
+    }
+]

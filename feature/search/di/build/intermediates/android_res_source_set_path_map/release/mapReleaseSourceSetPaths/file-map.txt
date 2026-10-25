@@ -1,0 +1,9 @@
+com.betafy.feature.search.di-pngs-0 /home/e/AndroidStudioProjects/BetafyApp/feature/search/di/build/generated/res/pngs/release
+com.betafy.feature.search.di-updated_navigation_xml-1 /home/e/AndroidStudioProjects/BetafyApp/feature/search/di/build/generated/updated_navigation_xml/release
+com.betafy.feature.search.di-mergeReleaseResources-2 /home/e/AndroidStudioProjects/BetafyApp/feature/search/di/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.betafy.feature.search.di-mergeReleaseResources-3 /home/e/AndroidStudioProjects/BetafyApp/feature/search/di/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.betafy.feature.search.di-release-4 /home/e/AndroidStudioProjects/BetafyApp/feature/search/di/build/intermediates/merged_res/release/mergeReleaseResources
+com.betafy.feature.search.di-release-5 /home/e/AndroidStudioProjects/BetafyApp/feature/search/di/build/intermediates/packaged_res/release/packageReleaseResources
+com.betafy.feature.search.di-main-6 /home/e/AndroidStudioProjects/BetafyApp/feature/search/di/src/main/res
+com.betafy.feature.search.di-release-7 /home/e/AndroidStudioProjects/BetafyApp/feature/search/di/src/release/res
+gradleHome-0 /home/e/.gradle

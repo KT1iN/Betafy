@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.di-release-25:/drawable-xxxhdpi-v4/ic_password.png",
+        "source": "com.betafy.feature.auth.di-credentials-1.2.0-rc01-16:/drawable-xxxhdpi-v4/ic_password.png"
+    },
+    {
+        "merged": "com.betafy.feature.auth.di-release-25:/drawable-xxxhdpi-v4/ic_passkey.png",
+        "source": "com.betafy.feature.auth.di-credentials-1.2.0-rc01-16:/drawable-xxxhdpi-v4/ic_passkey.png"
+    },
+    {
+        "merged": "com.betafy.feature.auth.di-release-25:/drawable-xxxhdpi-v4/ic_other_sign_in.png",
+        "source": "com.betafy.feature.auth.di-credentials-1.2.0-rc01-16:/drawable-xxxhdpi-v4/ic_other_sign_in.png"
+    }
+]
