@@ -27,5 +27,8 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
+
+    implementation("androidx.compose.material:material-icons-extended")
     implementation(project(":feature:auth:domain"))
+    implementation(project(":core:ui-kit"))
 }
