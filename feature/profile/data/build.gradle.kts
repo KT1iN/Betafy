@@ -4,7 +4,9 @@ plugins {
 
 android {
     namespace = "com.betafy.feature.profile.data"
-    compileSdk = 35
+    compileSdk {
+        version = release(37)
+    }
 
     defaultConfig {
         minSdk = 24

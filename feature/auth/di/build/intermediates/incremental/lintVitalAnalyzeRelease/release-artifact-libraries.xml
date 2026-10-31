@@ -1,9 +1,9 @@
 <libraries>
   <library
       name=":@@:feature:auth:domain::release"
-      jars="/home/e/.gradle/caches/9.6.0/transforms/b5d0acc7a511a87a2abc87c8dc8809a7/transformed/out/jars/classes.jar:/home/e/.gradle/caches/9.6.0/transforms/b5d0acc7a511a87a2abc87c8dc8809a7/transformed/out/jars/libs/R.jar"
+      jars="/home/e/.gradle/caches/9.6.0/transforms/ca186221928cb963319c8b67317df64c/transformed/out/jars/classes.jar:/home/e/.gradle/caches/9.6.0/transforms/ca186221928cb963319c8b67317df64c/transformed/out/jars/libs/R.jar"
       resolved="BetafyApp.feature.auth:domain:unspecified"
-      folder="/home/e/.gradle/caches/9.6.0/transforms/b5d0acc7a511a87a2abc87c8dc8809a7/transformed/out"
+      folder="/home/e/.gradle/caches/9.6.0/transforms/ca186221928cb963319c8b67317df64c/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -14,9 +14,9 @@
       proguardRules="proguard.txt"/>
   <library
       name=":@@:feature:auth:data::release"
-      jars="/home/e/.gradle/caches/9.6.0/transforms/da800834ad3ec6037d8dbc93340cdce1/transformed/out/jars/classes.jar:/home/e/.gradle/caches/9.6.0/transforms/da800834ad3ec6037d8dbc93340cdce1/transformed/out/jars/libs/R.jar"
+      jars="/home/e/.gradle/caches/9.6.0/transforms/5976635d3436c820d6216d675dc5dd35/transformed/out/jars/classes.jar:/home/e/.gradle/caches/9.6.0/transforms/5976635d3436c820d6216d675dc5dd35/transformed/out/jars/libs/R.jar"
       resolved="BetafyApp.feature.auth:data:unspecified"
-      folder="/home/e/.gradle/caches/9.6.0/transforms/da800834ad3ec6037d8dbc93340cdce1/transformed/out"
+      folder="/home/e/.gradle/caches/9.6.0/transforms/5976635d3436c820d6216d675dc5dd35/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.presentation-release-44:/font/unbounded_variable.ttf",
+        "source": "com.betafy.feature.auth.presentation-release-40:/font/unbounded_variable.ttf"
+    },
+    {
+        "merged": "com.betafy.feature.auth.presentation-release-44:/font/onest_variable.ttf",
+        "source": "com.betafy.feature.auth.presentation-release-40:/font/onest_variable.ttf"
+    },
+    {
+        "merged": "com.betafy.feature.auth.presentation-release-44:/font/literata_italic_variable.ttf",
+        "source": "com.betafy.feature.auth.presentation-release-40:/font/literata_italic_variable.ttf"
+    },
+    {
+        "merged": "com.betafy.feature.auth.presentation-release-44:/font/literata_variable.ttf",
+        "source": "com.betafy.feature.auth.presentation-release-40:/font/literata_variable.ttf"
+    }
+]
