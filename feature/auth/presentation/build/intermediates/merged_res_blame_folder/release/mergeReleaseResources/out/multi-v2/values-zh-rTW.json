@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.betafy.feature.auth.presentation-release-41:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.betafy.feature.auth.presentation-mergeReleaseResources-42:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "/home/e/.gradle/caches/9.6.0/transforms/dd1224f37dfa2292bb109f8aea69d87f/transformed/foundation/res/values-zh-rTW/values-zh-rTW.xml",
@@ -18,23 +18,6 @@
                         "startOffsets": "107,8943,9026",
                         "endColumns": "99,82,78",
                         "endOffsets": "202,9021,9100"
-                    }
-                },
-                {
-                    "source": "/home/e/.gradle/caches/9.6.0/transforms/3c7a973f2612f6da12e73d443e7823b7/transformed/core-1.16.0/res/values-zh-rTW/values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,147,246,340,434,527,620,716",
-                        "endColumns": "91,98,93,93,92,92,95,100",
-                        "endOffsets": "142,241,335,429,522,615,711,812"
-                    },
-                    "to": {
-                        "startLines": "4,5,6,7,8,9,10,93",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "299,391,490,584,678,771,864,8580",
-                        "endColumns": "91,98,93,93,92,92,95,100",
-                        "endOffsets": "386,485,579,673,766,859,955,8676"
                     }
                 },
                 {
@@ -69,12 +52,29 @@
                         "startOffsets": "207,960,1037,1113,1200,1291,1369,1443,7914,7992,8067,8140,8215,8283,8364,8437,8509,8681,8755,8823",
                         "endColumns": "91,76,75,86,90,77,73,76,77,74,72,74,67,80,72,71,70,73,67,119",
                         "endOffsets": "294,1032,1108,1195,1286,1364,1438,1515,7987,8062,8135,8210,8278,8359,8432,8504,8575,8750,8818,8938"
+                    }
+                },
+                {
+                    "source": "/home/e/.gradle/caches/9.6.0/transforms/c99d0fedabfcb9936f3a41033a41bcb6/transformed/core-1.19.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,147,246,340,434,527,620,716",
+                        "endColumns": "91,98,93,93,92,92,95,100",
+                        "endOffsets": "142,241,335,429,522,615,711,812"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,93",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "299,391,490,584,678,771,864,8580",
+                        "endColumns": "91,98,93,93,92,92,95,100",
+                        "endOffsets": "386,485,579,673,766,859,955,8676"
                     }
                 }
             ]
         },
         {
-            "outputFile": "com.betafy.feature.auth.presentation-mergeReleaseResources-39:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.betafy.feature.auth.presentation-release-44:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "/home/e/.gradle/caches/9.6.0/transforms/dd1224f37dfa2292bb109f8aea69d87f/transformed/foundation/res/values-zh-rTW/values-zh-rTW.xml",
@@ -91,23 +91,6 @@
                         "startOffsets": "107,8943,9026",
                         "endColumns": "99,82,78",
                         "endOffsets": "202,9021,9100"
-                    }
-                },
-                {
-                    "source": "/home/e/.gradle/caches/9.6.0/transforms/3c7a973f2612f6da12e73d443e7823b7/transformed/core-1.16.0/res/values-zh-rTW/values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,147,246,340,434,527,620,716",
-                        "endColumns": "91,98,93,93,92,92,95,100",
-                        "endOffsets": "142,241,335,429,522,615,711,812"
-                    },
-                    "to": {
-                        "startLines": "4,5,6,7,8,9,10,93",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "299,391,490,584,678,771,864,8580",
-                        "endColumns": "91,98,93,93,92,92,95,100",
-                        "endOffsets": "386,485,579,673,766,859,955,8676"
                     }
                 },
                 {
@@ -142,6 +125,23 @@
                         "startOffsets": "207,960,1037,1113,1200,1291,1369,1443,7914,7992,8067,8140,8215,8283,8364,8437,8509,8681,8755,8823",
                         "endColumns": "91,76,75,86,90,77,73,76,77,74,72,74,67,80,72,71,70,73,67,119",
                         "endOffsets": "294,1032,1108,1195,1286,1364,1438,1515,7987,8062,8135,8210,8278,8359,8432,8504,8575,8750,8818,8938"
+                    }
+                },
+                {
+                    "source": "/home/e/.gradle/caches/9.6.0/transforms/c99d0fedabfcb9936f3a41033a41bcb6/transformed/core-1.19.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,147,246,340,434,527,620,716",
+                        "endColumns": "91,98,93,93,92,92,95,100",
+                        "endOffsets": "142,241,335,429,522,615,711,812"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,93",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "299,391,490,584,678,771,864,8580",
+                        "endColumns": "91,98,93,93,92,92,95,100",
+                        "endOffsets": "386,485,579,673,766,859,955,8676"
                     }
                 }
             ]

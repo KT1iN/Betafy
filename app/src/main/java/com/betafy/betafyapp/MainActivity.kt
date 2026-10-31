@@ -1,10 +1,10 @@
-
 package com.betafy.betafyapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.isSystemInDarkTheme
 import com.betafy.betafyapp.ui.theme.BetafyTheme
 import com.betafy.betafyapp.ui.theme.BetafyContrast
 import dagger.hilt.android.AndroidEntryPoint
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             BetafyTheme(
-                darkTheme = false,
+                darkTheme = isSystemInDarkTheme(),
                 contrast = BetafyContrast.Standard,
                 dynamicColor = false
             ) {

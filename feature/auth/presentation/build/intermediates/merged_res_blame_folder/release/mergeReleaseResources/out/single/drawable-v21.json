@@ -1,6 +1,0 @@
-[
-    {
-        "merged": "com.betafy.feature.auth.presentation-release-41:/drawable-v21/notification_action_background.xml",
-        "source": "com.betafy.feature.auth.presentation-core-1.16.0-13:/drawable-v21/notification_action_background.xml"
-    }
-]

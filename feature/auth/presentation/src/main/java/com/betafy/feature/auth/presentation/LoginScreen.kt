@@ -1,34 +1,39 @@
-
 package com.betafy.feature.auth.presentation
 
-import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Email
+import androidx.compose.material.icons.outlined.Lock
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.betafy.betafyapp.core.uikit.theme.BetafySpacing
+import com.betafy.feature.auth.presentation.components.AuthErrorMessage
+import com.betafy.feature.auth.presentation.components.AuthHeader
+import com.betafy.feature.auth.presentation.components.AuthHero
 import com.betafy.feature.auth.presentation.components.AuthPrimaryButton
-import com.betafy.feature.auth.presentation.components.AuthSecondaryButton
+import com.betafy.feature.auth.presentation.components.AuthSuccessMessage
+import com.betafy.feature.auth.presentation.components.AuthTab
+import com.betafy.feature.auth.presentation.components.AuthTabSwitch
+import com.betafy.feature.auth.presentation.components.AuthTextField
 
 @Composable
 fun LoginScreen(
@@ -46,88 +51,76 @@ fun LoginScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .background(MaterialTheme.colorScheme.background)
             .safeDrawingPadding()
             .verticalScroll(rememberScrollState())
-            .padding(horizontal = 24.dp, vertical = 32.dp),
-        verticalArrangement = Arrangement.Center,
+            .padding(
+                horizontal = BetafySpacing.screenHorizontal,
+                vertical = BetafySpacing.lg
+            ),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(
-            text = "С возвращением!",
-            style = MaterialTheme.typography.headlineMedium,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.onBackground
+        AuthHero()
+
+        Spacer(Modifier.height(BetafySpacing.lg))
+
+        AuthHeader(
+            title = "С возвращением!",
+            subtitle = "Умный подбор интересных книг и подходящих бета-ридеров"
         )
 
-        Spacer(Modifier.height(8.dp))
+        Spacer(Modifier.height(BetafySpacing.lg))
 
-        Text(
-            text = "Войдите в свой аккаунт BetaFy",
-            style = MaterialTheme.typography.bodyLarge,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+        AuthTabSwitch(
+            selected = AuthTab.Login,
+            onLoginClick = {},
+            onRegisterClick = onRegisterClick
         )
 
-        Spacer(Modifier.height(32.dp))
+        Spacer(Modifier.height(BetafySpacing.md))
 
         if (registered) {
-            Text(
-                text = "Аккаунт создан. Теперь войдите.",
-                color = MaterialTheme.colorScheme.primary,
-                style = MaterialTheme.typography.bodyMedium
-            )
-            Spacer(Modifier.height(16.dp))
+            AuthSuccessMessage(text = "Аккаунт создан. Теперь войдите.")
+            Spacer(Modifier.height(BetafySpacing.sm))
         }
 
-        OutlinedTextField(
+        AuthTextField(
             value = state.email,
             onValueChange = viewModel::onEmailChange,
-            label = { Text("Электронная почта") },
-            singleLine = true,
+            label = "Электронная почта",
+            leadingIcon = Icons.Outlined.Email,
             keyboardOptions = KeyboardOptions(
-                keyboardType = KeyboardType.Email
-            ),
-            shape = RoundedCornerShape(16.dp),
-            modifier = Modifier.fillMaxWidth()
+                keyboardType = KeyboardType.Email,
+                imeAction = ImeAction.Next
+            )
         )
 
-        Spacer(Modifier.height(16.dp))
+        Spacer(Modifier.height(BetafySpacing.sm))
 
-        OutlinedTextField(
+        AuthTextField(
             value = state.password,
             onValueChange = viewModel::onPasswordChange,
-            label = { Text("Пароль") },
-            singleLine = true,
-            visualTransformation = PasswordVisualTransformation(),
+            label = "Пароль",
+            leadingIcon = Icons.Outlined.Lock,
+            isPassword = true,
             keyboardOptions = KeyboardOptions(
-                keyboardType = KeyboardType.Password
+                keyboardType = KeyboardType.Password,
+                imeAction = ImeAction.Done
             ),
-            shape = RoundedCornerShape(16.dp),
-            modifier = Modifier.fillMaxWidth()
+            keyboardActions = KeyboardActions(onDone = { viewModel.signIn() })
         )
 
         state.error?.let {
-            Spacer(Modifier.height(12.dp))
-            Text(
-                text = it,
-                color = MaterialTheme.colorScheme.error,
-                style = MaterialTheme.typography.bodySmall
-            )
+            Spacer(Modifier.height(BetafySpacing.sm))
+            AuthErrorMessage(text = it)
         }
 
-        Spacer(Modifier.height(28.dp))
+        Spacer(Modifier.height(BetafySpacing.lg))
 
         AuthPrimaryButton(
             text = "Войти",
             onClick = viewModel::signIn,
             isLoading = state.isLoading
-        )
-
-        Spacer(Modifier.height(12.dp))
-
-        AuthSecondaryButton(
-            question = "Нет аккаунта? ",
-            actionText = "Зарегистрироваться",
-            onClick = onRegisterClick
         )
     }
 }
