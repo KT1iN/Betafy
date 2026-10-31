@@ -63,7 +63,7 @@ fun AuthHero(
 
         // Размеры плашек зависят от ширины карточки.
         // Немного увеличены относительно предыдущей версии.
-        val stickerHeight = greenWidth * 0.145f
+        val stickerHeight = 36.dp  //greenWidth * 0.145f
         val stickerFontSize = (greenWidth.value * 0.049f).sp
         val stickerBorderWidth = greenWidth * 0.004f
         val stickerPadding = greenWidth * 0.048f
