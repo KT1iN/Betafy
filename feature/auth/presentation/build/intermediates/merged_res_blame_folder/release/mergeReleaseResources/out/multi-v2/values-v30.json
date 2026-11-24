@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.betafy.feature.auth.presentation-mergeReleaseResources-39:/values-v30/values-v30.xml",
+            "outputFile": "com.betafy.feature.auth.presentation-mergeReleaseResources-42:/values-v30/values-v30.xml",
             "map": [
                 {
                     "source": "/home/e/.gradle/caches/9.6.0/transforms/a8d130ce05c699cc92737f037de118ba/transformed/material3/res/values-v30/values-v30.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "com.betafy.feature.auth.presentation-release-41:/values-v30/values-v30.xml",
+            "outputFile": "com.betafy.feature.auth.presentation-release-44:/values-v30/values-v30.xml",
             "map": [
                 {
                     "source": "/home/e/.gradle/caches/9.6.0/transforms/a8d130ce05c699cc92737f037de118ba/transformed/material3/res/values-v30/values-v30.xml",

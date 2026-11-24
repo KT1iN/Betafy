@@ -6,7 +6,9 @@ plugins {
 
 android {
     namespace = "com.betafy.feature.auth.presentation"
-    compileSdk = 35
+    compileSdk {
+        version = release(37)
+    }
 
     defaultConfig {
         minSdk = 24
@@ -27,5 +29,8 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
+
+    implementation("androidx.compose.material:material-icons-extended")
     implementation(project(":feature:auth:domain"))
+    implementation(project(":core:ui-kit"))
 }

@@ -4,7 +4,9 @@ plugins {
 
 android {
     namespace = "com.betafy.feature.profile.data"
-    compileSdk = 35
+    compileSdk {
+        version = release(37)
+    }
 
     defaultConfig {
         minSdk = 24
@@ -17,7 +19,9 @@ android {
 }
 
 dependencies {
-    implementation("com.google.firebase:firebase-database")
     implementation(platform("com.google.firebase:firebase-bom:35.0.0"))
+    implementation("com.google.firebase:firebase-database")
+    implementation(libs.kotlinx.coroutines.play.services)
     implementation(project(":feature:profile:domain"))
+    testImplementation(libs.junit)
 }

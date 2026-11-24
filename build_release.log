@@ -1,123 +1,124 @@
 To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
 Daemon will be stopped at the end of the build 
-Calculating task graph as configuration cache cannot be reused because file 'core/common/build.gradle.kts' has changed.
-> Task :app:preBuild UP-TO-DATE
-> Task :feature:auth:domain:preBuild UP-TO-DATE
-> Task :feature:auth:data:preBuild UP-TO-DATE
+Calculating task graph as configuration cache cannot be reused because file 'feature/build.gradle.kts' has changed.
+> Task :core:ui-kit:preBuild UP-TO-DATE
 > Task :feature:auth:di:preBuild UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :feature:auth:data:preBuild UP-TO-DATE
 > Task :feature:auth:di:preReleaseBuild UP-TO-DATE
-> Task :feature:auth:data:preReleaseBuild UP-TO-DATE
 > Task :app:preReleaseBuild UP-TO-DATE
-> Task :feature:auth:domain:preReleaseBuild UP-TO-DATE
-> Task :feature:auth:data:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :core:ui-kit:preReleaseBuild UP-TO-DATE
+> Task :feature:auth:data:preReleaseBuild UP-TO-DATE
 > Task :app:mergeReleaseJniLibFolders UP-TO-DATE
-> Task :feature:auth:domain:mergeReleaseJniLibFolders UP-TO-DATE
-> Task :feature:auth:presentation:preBuild UP-TO-DATE
 > Task :feature:auth:di:mergeReleaseJniLibFolders UP-TO-DATE
-> Task :feature:auth:presentation:preReleaseBuild UP-TO-DATE
-> Task :feature:auth:presentation:mergeReleaseJniLibFolders UP-TO-DATE
-> Task :feature:auth:domain:mergeReleaseNativeLibs NO-SOURCE
-> Task :feature:auth:di:mergeReleaseNativeLibs NO-SOURCE
+> Task :core:ui-kit:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :feature:auth:data:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :feature:auth:domain:preBuild UP-TO-DATE
+> Task :feature:auth:domain:preReleaseBuild UP-TO-DATE
+> Task :feature:auth:domain:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :core:ui-kit:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:auth:data:mergeReleaseNativeLibs NO-SOURCE
-> Task :feature:auth:presentation:mergeReleaseNativeLibs NO-SOURCE
-> Task :feature:auth:di:copyReleaseJniLibsProjectOnly UP-TO-DATE
-> Task :feature:auth:domain:copyReleaseJniLibsProjectOnly UP-TO-DATE
-> Task :feature:auth:presentation:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :feature:auth:di:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:auth:data:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :core:ui-kit:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :feature:auth:presentation:preBuild UP-TO-DATE
+> Task :feature:auth:presentation:preReleaseBuild UP-TO-DATE
+> Task :feature:auth:di:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :feature:auth:domain:mergeReleaseNativeLibs NO-SOURCE
+> Task :feature:auth:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :feature:auth:domain:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :core:ui-kit:generateReleaseResources UP-TO-DATE
+> Task :feature:auth:presentation:mergeReleaseNativeLibs NO-SOURCE
+> Task :core:ui-kit:processReleaseNavigationResources UP-TO-DATE
+> Task :core:ui-kit:javaPreCompileRelease UP-TO-DATE
+> Task :feature:auth:domain:generateReleaseResources UP-TO-DATE
+> Task :feature:auth:presentation:copyReleaseJniLibsProjectOnly UP-TO-DATE
 > Task :feature:auth:domain:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:auth:domain:javaPreCompileRelease UP-TO-DATE
-> Task :feature:auth:domain:generateReleaseResources UP-TO-DATE
-> Task :feature:auth:presentation:generateReleaseResources UP-TO-DATE
-> Task :feature:auth:presentation:processReleaseNavigationResources UP-TO-DATE
+> Task :core:ui-kit:packageReleaseResources UP-TO-DATE
 > Task :feature:auth:domain:packageReleaseResources UP-TO-DATE
+> Task :feature:auth:presentation:generateReleaseResources UP-TO-DATE
+> Task :core:ui-kit:parseReleaseLocalResources UP-TO-DATE
+> Task :core:ui-kit:generateReleaseRFile UP-TO-DATE
 > Task :feature:auth:presentation:packageReleaseResources UP-TO-DATE
+> Task :feature:auth:presentation:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:auth:domain:parseReleaseLocalResources
+> Task :feature:auth:presentation:parseReleaseLocalResources
+> Task :feature:auth:domain:generateReleaseRFile
+> Task :feature:auth:presentation:generateReleaseRFile
 > Task :feature:auth:presentation:javaPreCompileRelease UP-TO-DATE
-> Task :feature:auth:presentation:parseReleaseLocalResources UP-TO-DATE
-> Task :feature:auth:domain:parseReleaseLocalResources UP-TO-DATE
-> Task :feature:auth:presentation:generateReleaseRFile UP-TO-DATE
 > Task :feature:auth:data:generateReleaseResources UP-TO-DATE
-> Task :feature:auth:domain:generateReleaseRFile UP-TO-DATE
-> Task :feature:auth:data:processReleaseNavigationResources UP-TO-DATE
-> Task :feature:auth:data:javaPreCompileRelease UP-TO-DATE
 > Task :feature:auth:data:packageReleaseResources UP-TO-DATE
+> Task :feature:auth:data:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:auth:data:parseReleaseLocalResources
+> Task :feature:auth:data:generateReleaseRFile
+> Task :feature:auth:data:javaPreCompileRelease UP-TO-DATE
 > Task :feature:auth:di:generateReleaseResources UP-TO-DATE
-> Task :feature:auth:data:parseReleaseLocalResources UP-TO-DATE
+> Task :core:ui-kit:compileReleaseKotlin UP-TO-DATE
+> Task :core:ui-kit:compileReleaseJavaWithJavac NO-SOURCE
 > Task :feature:auth:di:packageReleaseResources UP-TO-DATE
 > Task :feature:auth:di:processReleaseNavigationResources UP-TO-DATE
-> Task :feature:auth:data:generateReleaseRFile UP-TO-DATE
-> Task :feature:auth:di:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:auth:di:parseReleaseLocalResources
+> Task :feature:auth:di:generateReleaseRFile
 > Task :feature:auth:di:javaPreCompileRelease UP-TO-DATE
-> Task :feature:auth:di:generateReleaseRFile UP-TO-DATE
+> Task :core:ui-kit:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :core:ui-kit:bundleLibCompileToJarRelease
+> Task :core:ui-kit:exportReleaseConsumerProguardFiles
+> Task :core:ui-kit:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:auth:data:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:auth:di:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:auth:domain:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:auth:presentation:prepareReleaseArtProfile UP-TO-DATE
-> Task :feature:auth:domain:compileReleaseKotlin UP-TO-DATE
-> Task :feature:auth:domain:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:auth:domain:bundleLibCompileToJarRelease UP-TO-DATE
-> Task :feature:auth:presentation:kspReleaseKotlin UP-TO-DATE
-> Task :feature:auth:presentation:compileReleaseKotlin UP-TO-DATE
 > Task :app:checkReleaseDuplicateClasses UP-TO-DATE
-> Task :app:mergeReleaseArtProfile UP-TO-DATE
-> Task :feature:auth:domain:mergeReleaseGeneratedProguardFiles UP-TO-DATE
-> Task :feature:auth:domain:exportReleaseConsumerProguardFiles UP-TO-DATE
 > Task :app:generateReleaseResources UP-TO-DATE
 > Task :app:processReleaseGoogleServices UP-TO-DATE
-> Task :app:mergeReleaseNativeLibs UP-TO-DATE
 > Task :app:packageReleaseResources UP-TO-DATE
+> Task :app:mergeReleaseArtProfile UP-TO-DATE
+> Task :app:javaPreCompileRelease UP-TO-DATE
+> Task :core:ui-kit:bundleLibRuntimeToJarRelease
+> Task :core:ui-kit:writeReleaseAarMetadata UP-TO-DATE
+> Task :app:mergeReleaseNativeLibs UP-TO-DATE
+> Task :feature:auth:data:writeReleaseAarMetadata
+> Task :feature:auth:di:writeReleaseAarMetadata
 > Task :app:stripReleaseDebugSymbols UP-TO-DATE
 > Task :app:extractReleaseNativeSymbolTables UP-TO-DATE
+> Task :feature:auth:domain:writeReleaseAarMetadata
 > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
-> Task :app:javaPreCompileRelease UP-TO-DATE
-> Task :feature:auth:domain:bundleLibRuntimeToJarRelease UP-TO-DATE
-> Task :feature:auth:data:writeReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:di:writeReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:domain:writeReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:presentation:writeReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:data:compileReleaseKotlin UP-TO-DATE
-> Task :feature:auth:data:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:auth:data:bundleLibCompileToJarRelease UP-TO-DATE
-> Task :feature:auth:di:kspReleaseKotlin UP-TO-DATE
-> Task :feature:auth:di:compileReleaseKotlin UP-TO-DATE
-> Task :feature:auth:di:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:auth:presentation:writeReleaseAarMetadata
 > Task :app:processReleaseNavigationResources UP-TO-DATE
-> Task :feature:auth:data:mergeReleaseGeneratedProguardFiles UP-TO-DATE
-> Task :feature:auth:data:exportReleaseConsumerProguardFiles UP-TO-DATE
 > Task :app:parseReleaseLocalResources UP-TO-DATE
 > Task :app:generateReleaseRFile UP-TO-DATE
-> Task :feature:auth:di:mergeReleaseGeneratedProguardFiles
-> Task :app:checkReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:di:exportReleaseConsumerProguardFiles
-> Task :feature:auth:data:bundleLibRuntimeToJarRelease UP-TO-DATE
-> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
 > Task :app:compileReleaseNavigationResources UP-TO-DATE
-> Task :feature:auth:di:bundleLibRuntimeToJarRelease
-> Task :feature:auth:di:bundleLibCompileToJarRelease
 > Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
 > Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :core:ui-kit:extractDeepLinksRelease UP-TO-DATE
+> Task :core:ui-kit:processReleaseManifest UP-TO-DATE
 > Task :feature:auth:data:extractDeepLinksRelease UP-TO-DATE
-> Task :feature:auth:data:processReleaseManifest UP-TO-DATE
+> Task :app:checkReleaseAarMetadata
 > Task :feature:auth:di:extractDeepLinksRelease UP-TO-DATE
+> Task :app:mergeReleaseResources UP-TO-DATE
 > Task :feature:auth:domain:extractDeepLinksRelease UP-TO-DATE
-> Task :feature:auth:di:processReleaseManifest UP-TO-DATE
+> Task :feature:auth:di:processReleaseManifest
+> Task :feature:auth:domain:processReleaseManifest
+> Task :feature:auth:data:processReleaseManifest
 > Task :feature:auth:presentation:extractDeepLinksRelease UP-TO-DATE
-> Task :feature:auth:domain:processReleaseManifest UP-TO-DATE
-> Task :feature:auth:presentation:processReleaseManifest UP-TO-DATE
+> Task :core:ui-kit:mapReleaseSourceSetPaths UP-TO-DATE
 > Task :feature:auth:data:mapReleaseSourceSetPaths UP-TO-DATE
-> Task :feature:auth:data:compileReleaseLibraryResources UP-TO-DATE
+> Task :core:ui-kit:compileReleaseLibraryResources UP-TO-DATE
 > Task :feature:auth:di:mapReleaseSourceSetPaths UP-TO-DATE
-> Task :feature:auth:di:compileReleaseLibraryResources UP-TO-DATE
+> Task :feature:auth:data:compileReleaseLibraryResources UP-TO-DATE
 > Task :feature:auth:domain:mapReleaseSourceSetPaths UP-TO-DATE
-> Task :feature:auth:domain:compileReleaseLibraryResources UP-TO-DATE
+> Task :feature:auth:di:compileReleaseLibraryResources UP-TO-DATE
 > Task :feature:auth:presentation:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:auth:domain:compileReleaseLibraryResources UP-TO-DATE
+> Task :feature:auth:presentation:processReleaseManifest
 > Task :feature:auth:presentation:compileReleaseLibraryResources UP-TO-DATE
 > Task :app:extractProguardFiles UP-TO-DATE
-> Task :feature:auth:data:processReleaseJavaRes UP-TO-DATE
-> Task :feature:auth:di:processReleaseJavaRes UP-TO-DATE
-> Task :feature:auth:domain:processReleaseJavaRes UP-TO-DATE
-> Task :feature:auth:presentation:processReleaseJavaRes
 > Task :app:mergeReleaseStartupProfile UP-TO-DATE
 > Task :app:generateReleaseAssets UP-TO-DATE
+> Task :core:ui-kit:generateReleaseAssets UP-TO-DATE
+> Task :core:ui-kit:mergeReleaseAssets UP-TO-DATE
 > Task :feature:auth:data:generateReleaseAssets UP-TO-DATE
 > Task :feature:auth:data:mergeReleaseAssets UP-TO-DATE
 > Task :feature:auth:di:generateReleaseAssets UP-TO-DATE
@@ -126,85 +127,95 @@ Calculating task graph as configuration cache cannot be reused because file 'cor
 > Task :feature:auth:domain:mergeReleaseAssets UP-TO-DATE
 > Task :feature:auth:presentation:generateReleaseAssets UP-TO-DATE
 > Task :feature:auth:presentation:mergeReleaseAssets UP-TO-DATE
-> Task :app:mergeReleaseResources UP-TO-DATE
+> Task :core:ui-kit:processReleaseJavaRes
 > Task :app:extractReleaseVersionControlInfo UP-TO-DATE
-> Task :feature:auth:data:createFullJarRelease UP-TO-DATE
-> Task :feature:auth:data:extractProguardFiles UP-TO-DATE
-> Task :feature:auth:domain:createFullJarRelease UP-TO-DATE
-> Task :feature:auth:domain:extractProguardFiles UP-TO-DATE
-> Task :feature:auth:domain:generateReleaseLintModel UP-TO-DATE
-> Task :feature:auth:domain:prepareLintJarForPublish UP-TO-DATE
+> Task :core:ui-kit:createFullJarRelease
+> Task :core:ui-kit:extractProguardFiles UP-TO-DATE
 > Task :app:mergeReleaseAssets UP-TO-DATE
 > Task :app:compressReleaseAssets UP-TO-DATE
+> Task :core:ui-kit:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:auth:data:extractProguardFiles UP-TO-DATE
+> Task :feature:auth:domain:extractProguardFiles UP-TO-DATE
+> Task :feature:auth:domain:prepareLintJarForPublish UP-TO-DATE
 > Task :feature:auth:data:prepareLintJarForPublish UP-TO-DATE
-> Task :feature:auth:di:createFullJarRelease
 > Task :feature:auth:di:extractProguardFiles UP-TO-DATE
 > Task :feature:auth:di:prepareLintJarForPublish UP-TO-DATE
 > Task :feature:auth:presentation:extractProguardFiles UP-TO-DATE
 > Task :feature:auth:presentation:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:auth:presentation:checkReleaseAarMetadata
+> Task :feature:auth:presentation:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:auth:di:checkReleaseAarMetadata
+> Task :feature:auth:di:extractDeepLinksForAarRelease UP-TO-DATE
 > Task :app:processReleaseMainManifest UP-TO-DATE
 > Task :app:processReleaseManifest UP-TO-DATE
 > Task :app:processReleaseManifestForPackage UP-TO-DATE
-> Task :feature:auth:presentation:checkReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:presentation:extractDeepLinksForAarRelease UP-TO-DATE
-> Task :feature:auth:data:generateReleaseLintModel UP-TO-DATE
-> Task :feature:auth:presentation:extractReleaseAnnotations UP-TO-DATE
-> Task :feature:auth:presentation:mergeReleaseJavaResource
-> Task :feature:auth:di:checkReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:di:extractDeepLinksForAarRelease UP-TO-DATE
-> Task :feature:auth:di:extractReleaseAnnotations UP-TO-DATE
-> Task :feature:auth:di:mergeReleaseConsumerProguardFiles
-> Task :feature:auth:di:mergeReleaseJavaResource UP-TO-DATE
-> Task :feature:auth:di:syncReleaseLibJars
-> Task :app:processReleaseResources UP-TO-DATE
-> Task :feature:auth:data:checkReleaseAarMetadata UP-TO-DATE
+> Task :core:ui-kit:generateReleaseLintModel
 > Task :feature:auth:data:extractDeepLinksForAarRelease UP-TO-DATE
-> Task :feature:auth:data:extractReleaseAnnotations UP-TO-DATE
+> Task :feature:auth:domain:checkReleaseAarMetadata
+> Task :feature:auth:domain:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:auth:data:checkReleaseAarMetadata
+> Task :core:ui-kit:checkReleaseAarMetadata
+> Task :core:ui-kit:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:auth:domain:extractReleaseAnnotations
+> Task :core:ui-kit:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :core:ui-kit:extractReleaseAnnotations
+> Task :feature:auth:domain:compileReleaseKotlin
+> Task :feature:auth:domain:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:auth:domain:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :core:ui-kit:mergeReleaseJavaResource
+> Task :feature:auth:data:compileReleaseKotlin
+> Task :feature:auth:data:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:auth:data:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :app:processReleaseResources
+> Task :feature:auth:data:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:auth:data:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:auth:domain:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:auth:domain:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:auth:data:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :feature:auth:domain:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :feature:auth:data:processReleaseJavaRes UP-TO-DATE
+> Task :feature:auth:domain:processReleaseJavaRes UP-TO-DATE
+> Task :feature:auth:data:createFullJarRelease UP-TO-DATE
+> Task :feature:auth:domain:createFullJarRelease UP-TO-DATE
+> Task :feature:auth:domain:generateReleaseLintModel
+> Task :feature:auth:data:generateReleaseLintModel
+> Task :feature:auth:data:extractReleaseAnnotations
 > Task :feature:auth:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
 > Task :feature:auth:data:mergeReleaseJavaResource UP-TO-DATE
 > Task :feature:auth:data:syncReleaseLibJars UP-TO-DATE
-> Task :feature:auth:data:bundleReleaseLocalLintAar UP-TO-DATE
-> Task :feature:auth:domain:checkReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:domain:extractDeepLinksForAarRelease UP-TO-DATE
-> Task :feature:auth:domain:extractReleaseAnnotations UP-TO-DATE
+> Task :feature:auth:data:bundleReleaseLocalLintAar
 > Task :feature:auth:domain:mergeReleaseConsumerProguardFiles UP-TO-DATE
-> Task :feature:auth:di:bundleReleaseLocalLintAar
 > Task :feature:auth:domain:mergeReleaseJavaResource UP-TO-DATE
 > Task :feature:auth:domain:syncReleaseLibJars UP-TO-DATE
-> Task :feature:auth:domain:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :feature:auth:domain:bundleReleaseLocalLintAar
+> Task :core:ui-kit:syncReleaseLibJars
+> Task :core:ui-kit:bundleReleaseLocalLintAar
+> Task :core:ui-kit:writeReleaseLintModelMetadata
 > Task :feature:auth:domain:writeReleaseLintModelMetadata UP-TO-DATE
-> Task :feature:auth:data:writeReleaseLintModelMetadata UP-TO-DATE
-> Task :feature:auth:data:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :core:ui-kit:lintVitalAnalyzeRelease
+> Task :feature:auth:presentation:kspReleaseKotlin
+> Task :feature:auth:di:kspReleaseKotlin
+> Task :feature:auth:data:lintVitalAnalyzeRelease
+> Task :feature:auth:di:compileReleaseKotlin
+> Task :feature:auth:di:processReleaseJavaRes UP-TO-DATE
+> Task :feature:auth:di:extractReleaseAnnotations
+> Task :feature:auth:di:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:auth:presentation:extractReleaseAnnotations
 > Task :feature:auth:di:writeReleaseLintModelMetadata UP-TO-DATE
-> Task :feature:auth:domain:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :feature:auth:data:writeReleaseLintModelMetadata UP-TO-DATE
 > Task :feature:auth:presentation:writeReleaseLintModelMetadata UP-TO-DATE
-> Task :feature:auth:data:generateReleaseLintVitalModel UP-TO-DATE
-> Task :feature:auth:di:generateReleaseLintModel
-> Task :feature:auth:domain:generateReleaseLintVitalModel UP-TO-DATE
-> Task :app:collectReleaseDependencies UP-TO-DATE
-> Task :app:sdkReleaseDependencyData UP-TO-DATE
+> Task :core:ui-kit:generateReleaseLintVitalModel
+> Task :feature:auth:data:generateReleaseLintVitalModel
+> Task :feature:auth:domain:generateReleaseLintVitalModel
+> Task :feature:auth:domain:lintVitalAnalyzeRelease
 > Task :app:writeReleaseAppMetadata UP-TO-DATE
 > Task :app:writeReleaseSigningConfigVersions UP-TO-DATE
-> Task :feature:auth:di:generateReleaseLintVitalModel
-> Task :core:generateReleaseAssets UP-TO-DATE
 > Task :core:preBuild UP-TO-DATE
 > Task :core:preReleaseBuild UP-TO-DATE
-> Task :core:prepareLintJarForPublish UP-TO-DATE
+> Task :core:checkReleaseAarMetadata UP-TO-DATE
 > Task :core:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :core:mergeReleaseNativeLibs NO-SOURCE
-> Task :feature:auth:presentation:compileReleaseJavaWithJavac
 > Task :core:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:auth:presentation:mergeReleaseGeneratedProguardFiles
-> Task :feature:auth:presentation:bundleLibCompileToJarRelease
-> Task :feature:auth:presentation:exportReleaseConsumerProguardFiles
-> Task :core:checkReleaseAarMetadata UP-TO-DATE
-> Task :feature:auth:presentation:bundleLibRuntimeToJarRelease
-> Task :feature:auth:presentation:createFullJarRelease
-> Task :feature:auth:presentation:mergeReleaseConsumerProguardFiles
-> Task :feature:auth:presentation:syncReleaseLibJars
-> Task :feature:auth:presentation:bundleReleaseLocalLintAar
-> Task :feature:auth:presentation:generateReleaseLintModel
-> Task :feature:auth:presentation:generateReleaseLintVitalModel
 > Task :core:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
 > Task :core:extractDeepLinksForAarRelease UP-TO-DATE
 > Task :core:generateReleaseResources UP-TO-DATE
@@ -212,13 +223,16 @@ Calculating task graph as configuration cache cannot be reused because file 'cor
 > Task :core:processReleaseNavigationResources UP-TO-DATE
 > Task :core:parseReleaseLocalResources UP-TO-DATE
 > Task :core:generateReleaseRFile UP-TO-DATE
+> Task :app:collectReleaseDependencies
 > Task :core:extractReleaseAnnotations UP-TO-DATE
+> Task :core:generateReleaseAssets UP-TO-DATE
 > Task :core:mergeReleaseAssets UP-TO-DATE
 > Task :core:compileReleaseKotlin NO-SOURCE
 > Task :core:javaPreCompileRelease UP-TO-DATE
 > Task :core:compileReleaseJavaWithJavac NO-SOURCE
 > Task :core:mergeReleaseGeneratedProguardFiles UP-TO-DATE
 > Task :core:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :core:prepareLintJarForPublish UP-TO-DATE
 > Task :core:prepareReleaseArtProfile UP-TO-DATE
 > Task :core:processReleaseManifest UP-TO-DATE
 > Task :core:processReleaseJavaRes NO-SOURCE
@@ -227,45 +241,55 @@ Calculating task graph as configuration cache cannot be reused because file 'cor
 > Task :core:writeReleaseAarMetadata UP-TO-DATE
 > Task :core:bundleReleaseAar UP-TO-DATE
 > Task :core:mapReleaseSourceSetPaths UP-TO-DATE
-> Task :core:mergeReleaseResources UP-TO-DATE
-> Task :core:verifyReleaseResources UP-TO-DATE
-> Task :core:assembleRelease UP-TO-DATE
+> Task :app:sdkReleaseDependencyData
 > Task :feature:preBuild UP-TO-DATE
 > Task :feature:preReleaseBuild UP-TO-DATE
-> Task :feature:checkReleaseAarMetadata UP-TO-DATE
+> Task :feature:checkReleaseAarMetadata
 > Task :feature:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:stripReleaseDebugSymbols NO-SOURCE
 > Task :feature:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
 > Task :feature:extractDeepLinksForAarRelease UP-TO-DATE
 > Task :feature:generateReleaseResources UP-TO-DATE
+> Task :feature:auth:di:compileReleaseJavaWithJavac
+> Task :feature:auth:di:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:auth:di:exportReleaseConsumerProguardFiles UP-TO-DATE
 > Task :feature:packageReleaseResources UP-TO-DATE
+> Task :feature:auth:di:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :feature:auth:di:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :feature:auth:di:createFullJarRelease UP-TO-DATE
+> Task :feature:auth:di:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:auth:di:syncReleaseLibJars UP-TO-DATE
+> Task :core:mergeReleaseResources UP-TO-DATE
+> Task :feature:auth:di:bundleReleaseLocalLintAar
+> Task :feature:auth:di:generateReleaseLintModel
+> Task :feature:auth:di:generateReleaseLintVitalModel
 > Task :feature:processReleaseNavigationResources UP-TO-DATE
-> Task :feature:parseReleaseLocalResources UP-TO-DATE
-> Task :feature:generateReleaseRFile UP-TO-DATE
-> Task :feature:extractReleaseAnnotations UP-TO-DATE
+> Task :feature:parseReleaseLocalResources
+> Task :feature:generateReleaseRFile
+> Task :core:verifyReleaseResources UP-TO-DATE
+> Task :core:assembleRelease UP-TO-DATE
 > Task :feature:generateReleaseAssets UP-TO-DATE
 > Task :feature:mergeReleaseAssets UP-TO-DATE
 > Task :feature:compileReleaseKotlin NO-SOURCE
 > Task :feature:javaPreCompileRelease UP-TO-DATE
+> Task :feature:extractReleaseAnnotations
 > Task :feature:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:mergeReleaseGeneratedProguardFiles UP-TO-DATE
-> Task :feature:mergeReleaseConsumerProguardFiles UP-TO-DATE
 > Task :feature:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:mergeReleaseGeneratedProguardFiles UP-TO-DATE
 > Task :feature:prepareReleaseArtProfile UP-TO-DATE
-> Task :feature:processReleaseManifest UP-TO-DATE
+> Task :feature:mergeReleaseConsumerProguardFiles UP-TO-DATE
 > Task :feature:processReleaseJavaRes NO-SOURCE
 > Task :feature:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:processReleaseManifest
 > Task :feature:syncReleaseLibJars UP-TO-DATE
-> Task :feature:writeReleaseAarMetadata UP-TO-DATE
-> Task :feature:bundleReleaseAar UP-TO-DATE
+> Task :feature:writeReleaseAarMetadata
 > Task :feature:mapReleaseSourceSetPaths UP-TO-DATE
-> Task :feature:mergeReleaseResources UP-TO-DATE
-> Task :feature:verifyReleaseResources UP-TO-DATE
-> Task :feature:assembleRelease UP-TO-DATE
+> Task :feature:bundleReleaseAar
 > Task :core:common:preBuild UP-TO-DATE
 > Task :core:common:preReleaseBuild UP-TO-DATE
-> Task :core:common:checkReleaseAarMetadata
+> Task :feature:mergeReleaseResources UP-TO-DATE
+> Task :core:common:checkReleaseAarMetadata UP-TO-DATE
 > Task :core:common:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :core:common:mergeReleaseNativeLibs NO-SOURCE
 > Task :core:common:stripReleaseDebugSymbols NO-SOURCE
@@ -276,884 +300,874 @@ Calculating task graph as configuration cache cannot be reused because file 'cor
 > Task :core:common:processReleaseNavigationResources UP-TO-DATE
 > Task :core:common:parseReleaseLocalResources UP-TO-DATE
 > Task :core:common:generateReleaseRFile UP-TO-DATE
-> Task :core:common:extractReleaseAnnotations
+> Task :core:common:extractReleaseAnnotations UP-TO-DATE
 > Task :core:common:generateReleaseAssets UP-TO-DATE
 > Task :core:common:mergeReleaseAssets UP-TO-DATE
 > Task :core:common:compileReleaseKotlin UP-TO-DATE
 > Task :core:common:javaPreCompileRelease UP-TO-DATE
 > Task :core:common:compileReleaseJavaWithJavac NO-SOURCE
-> Task :core:common:mergeReleaseGeneratedProguardFiles
-> Task :core:common:mergeReleaseConsumerProguardFiles
+> Task :core:common:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :core:common:mergeReleaseConsumerProguardFiles UP-TO-DATE
 > Task :core:common:prepareLintJarForPublish UP-TO-DATE
 > Task :core:common:prepareReleaseArtProfile UP-TO-DATE
 > Task :core:common:processReleaseManifest UP-TO-DATE
-> Task :core:common:processReleaseJavaRes
-> Task :core:common:mergeReleaseJavaResource
-> Task :core:common:syncReleaseLibJars
+> Task :core:common:processReleaseJavaRes UP-TO-DATE
+> Task :core:common:mergeReleaseJavaResource UP-TO-DATE
+> Task :core:common:syncReleaseLibJars UP-TO-DATE
 > Task :core:common:writeReleaseAarMetadata UP-TO-DATE
-> Task :core:common:bundleReleaseAar
+> Task :core:common:bundleReleaseAar UP-TO-DATE
 > Task :core:common:mapReleaseSourceSetPaths UP-TO-DATE
-> Task :core:common:mergeReleaseResources
-> Task :feature:auth:presentation:lintVitalAnalyzeRelease
+> Task :feature:verifyReleaseResources
+> Task :feature:assembleRelease
 > Task :core:database:preBuild UP-TO-DATE
-> Task :feature:auth:di:lintVitalAnalyzeRelease
-> Task :core:database:generateReleaseAssets UP-TO-DATE
 > Task :core:database:preReleaseBuild UP-TO-DATE
-> Task :core:database:prepareLintJarForPublish
-> Task :core:database:checkReleaseAarMetadata
-> Task :core:database:extractDeepLinksForAarRelease
-> Task :core:database:generateReleaseResources
-> Task :core:database:mergeReleaseJniLibFolders
+> Task :core:database:checkReleaseAarMetadata UP-TO-DATE
+> Task :core:database:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :core:database:mergeReleaseNativeLibs NO-SOURCE
 > Task :core:database:stripReleaseDebugSymbols NO-SOURCE
-> Task :core:database:packageReleaseResources
-> Task :core:database:processReleaseNavigationResources
-> Task :core:database:copyReleaseJniLibsProjectAndLocalJars
-> Task :core:database:mergeReleaseAssets
-> Task :core:database:javaPreCompileRelease
-> Task :core:database:prepareReleaseArtProfile
-> Task :core:database:parseReleaseLocalResources
-> Task :core:database:processReleaseManifest
-> Task :core:database:writeReleaseAarMetadata
-> Task :core:database:generateReleaseRFile
-> Task :core:database:mapReleaseSourceSetPaths
+> Task :core:database:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :core:database:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :core:database:generateReleaseResources UP-TO-DATE
+> Task :core:database:packageReleaseResources UP-TO-DATE
+> Task :core:database:processReleaseNavigationResources UP-TO-DATE
+> Task :core:database:parseReleaseLocalResources UP-TO-DATE
+> Task :core:database:generateReleaseRFile UP-TO-DATE
+> Task :core:common:mergeReleaseResources UP-TO-DATE
+> Task :core:database:extractReleaseAnnotations UP-TO-DATE
+> Task :core:database:generateReleaseAssets UP-TO-DATE
+> Task :core:database:mergeReleaseAssets UP-TO-DATE
 > Task :core:database:compileReleaseKotlin NO-SOURCE
-> Task :core:database:extractReleaseAnnotations
+> Task :core:database:javaPreCompileRelease UP-TO-DATE
 > Task :core:database:compileReleaseJavaWithJavac NO-SOURCE
+> Task :core:database:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :core:database:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :core:database:prepareLintJarForPublish UP-TO-DATE
+> Task :core:database:prepareReleaseArtProfile UP-TO-DATE
+> Task :core:database:processReleaseManifest UP-TO-DATE
 > Task :core:database:processReleaseJavaRes NO-SOURCE
-> Task :core:database:mergeReleaseGeneratedProguardFiles
-> Task :core:database:mergeReleaseJavaResource
-> Task :core:database:mergeReleaseConsumerProguardFiles
-> Task :core:database:syncReleaseLibJars
-> Task :core:database:bundleReleaseAar
+> Task :core:database:mergeReleaseJavaResource UP-TO-DATE
+> Task :core:common:verifyReleaseResources UP-TO-DATE
+> Task :core:common:assembleRelease UP-TO-DATE
+> Task :core:database:writeReleaseAarMetadata UP-TO-DATE
+> Task :core:database:syncReleaseLibJars UP-TO-DATE
+> Task :core:database:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :core:database:bundleReleaseAar UP-TO-DATE
 > Task :core:network:preBuild UP-TO-DATE
 > Task :core:network:preReleaseBuild UP-TO-DATE
-> Task :core:network:checkReleaseAarMetadata
-> Task :core:network:mergeReleaseJniLibFolders
+> Task :core:network:checkReleaseAarMetadata UP-TO-DATE
+> Task :core:network:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :core:network:mergeReleaseNativeLibs NO-SOURCE
 > Task :core:network:stripReleaseDebugSymbols NO-SOURCE
-> Task :core:network:copyReleaseJniLibsProjectAndLocalJars
-> Task :core:network:extractDeepLinksForAarRelease
-> Task :core:network:generateReleaseResources
-> Task :core:network:packageReleaseResources
-> Task :core:network:processReleaseNavigationResources
-> Task :core:network:parseReleaseLocalResources
-> Task :core:network:generateReleaseRFile
-> Task :core:network:extractReleaseAnnotations
+> Task :core:network:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :core:network:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :core:network:generateReleaseResources UP-TO-DATE
+> Task :core:network:packageReleaseResources UP-TO-DATE
+> Task :core:network:processReleaseNavigationResources UP-TO-DATE
+> Task :core:network:parseReleaseLocalResources UP-TO-DATE
+> Task :core:network:generateReleaseRFile UP-TO-DATE
+> Task :core:network:extractReleaseAnnotations UP-TO-DATE
 > Task :core:network:generateReleaseAssets UP-TO-DATE
-> Task :core:network:mergeReleaseAssets
+> Task :core:database:mergeReleaseResources UP-TO-DATE
+> Task :core:network:mergeReleaseAssets UP-TO-DATE
 > Task :core:network:compileReleaseKotlin NO-SOURCE
-> Task :core:network:javaPreCompileRelease
+> Task :core:network:javaPreCompileRelease UP-TO-DATE
 > Task :core:network:compileReleaseJavaWithJavac NO-SOURCE
-> Task :core:network:mergeReleaseGeneratedProguardFiles
-> Task :core:network:mergeReleaseConsumerProguardFiles
-> Task :core:network:prepareLintJarForPublish
-> Task :core:network:prepareReleaseArtProfile
-> Task :core:network:processReleaseManifest
+> Task :core:network:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :core:network:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :core:network:prepareLintJarForPublish UP-TO-DATE
+> Task :core:network:prepareReleaseArtProfile UP-TO-DATE
+> Task :core:database:verifyReleaseResources UP-TO-DATE
+> Task :core:database:assembleRelease UP-TO-DATE
+> Task :core:network:processReleaseManifest UP-TO-DATE
 > Task :core:network:processReleaseJavaRes NO-SOURCE
-> Task :core:network:mergeReleaseJavaResource
-> Task :core:network:syncReleaseLibJars
-> Task :core:network:writeReleaseAarMetadata
-> Task :core:network:bundleReleaseAar
-> Task :core:network:mapReleaseSourceSetPaths
-> Task :core:common:verifyReleaseResources
-> Task :core:common:assembleRelease
-> Task :core:ui-kit:preBuild UP-TO-DATE
-> Task :core:ui-kit:preReleaseBuild UP-TO-DATE
-> Task :core:ui-kit:checkReleaseAarMetadata
-> Task :core:ui-kit:mergeReleaseJniLibFolders
-> Task :core:ui-kit:mergeReleaseNativeLibs NO-SOURCE
+> Task :core:network:writeReleaseAarMetadata UP-TO-DATE
+> Task :core:network:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :core:network:mergeReleaseJavaResource UP-TO-DATE
+> Task :core:network:syncReleaseLibJars UP-TO-DATE
+> Task :core:network:bundleReleaseAar UP-TO-DATE
 > Task :core:ui-kit:stripReleaseDebugSymbols NO-SOURCE
-> Task :core:ui-kit:copyReleaseJniLibsProjectAndLocalJars
-> Task :core:ui-kit:extractDeepLinksForAarRelease
-> Task :core:ui-kit:generateReleaseResources
-> Task :core:ui-kit:packageReleaseResources
-> Task :core:ui-kit:processReleaseNavigationResources
-> Task :core:ui-kit:parseReleaseLocalResources
-> Task :core:ui-kit:generateReleaseRFile
-> Task :core:ui-kit:extractReleaseAnnotations
-> Task :core:ui-kit:generateReleaseAssets UP-TO-DATE
-> Task :core:ui-kit:mergeReleaseAssets
-> Task :core:ui-kit:compileReleaseKotlin NO-SOURCE
-> Task :core:ui-kit:javaPreCompileRelease
-> Task :core:ui-kit:compileReleaseJavaWithJavac NO-SOURCE
-> Task :core:ui-kit:mergeReleaseGeneratedProguardFiles
-> Task :core:ui-kit:mergeReleaseConsumerProguardFiles
-> Task :core:ui-kit:prepareLintJarForPublish
-> Task :core:ui-kit:prepareReleaseArtProfile
-> Task :core:ui-kit:processReleaseManifest
-> Task :core:ui-kit:processReleaseJavaRes NO-SOURCE
-> Task :core:ui-kit:mergeReleaseJavaResource
-> Task :core:ui-kit:syncReleaseLibJars
-> Task :core:ui-kit:writeReleaseAarMetadata
+> Task :core:ui-kit:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :core:network:mergeReleaseResources UP-TO-DATE
 > Task :core:ui-kit:bundleReleaseAar
-> Task :core:ui-kit:mapReleaseSourceSetPaths
-> Task :app:kspReleaseKotlin
-> Task :core:database:mergeReleaseResources
-> Task :core:network:mergeReleaseResources
-> Task :core:ui-kit:mergeReleaseResources
-> Task :core:database:verifyReleaseResources
-> Task :core:database:assembleRelease
+> Task :core:network:verifyReleaseResources UP-TO-DATE
+> Task :core:network:assembleRelease UP-TO-DATE
 > Task :feature:auth:preBuild UP-TO-DATE
 > Task :feature:auth:preReleaseBuild UP-TO-DATE
-> Task :core:network:verifyReleaseResources
-> Task :core:network:assembleRelease
-> Task :feature:auth:mergeReleaseJniLibFolders
+> Task :feature:auth:checkReleaseAarMetadata UP-TO-DATE
+> Task :feature:auth:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:auth:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:auth:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:auth:checkReleaseAarMetadata
-> Task :feature:auth:extractDeepLinksForAarRelease
-> Task :feature:auth:generateReleaseResources
-> Task :feature:auth:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:auth:processReleaseNavigationResources
+> Task :feature:auth:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:auth:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:auth:generateReleaseResources UP-TO-DATE
+> Task :feature:auth:packageReleaseResources UP-TO-DATE
+> Task :feature:auth:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:auth:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:auth:generateReleaseRFile UP-TO-DATE
+> Task :feature:auth:extractReleaseAnnotations UP-TO-DATE
 > Task :feature:auth:generateReleaseAssets UP-TO-DATE
-> Task :feature:auth:mergeReleaseAssets
-> Task :feature:auth:packageReleaseResources
-> Task :feature:auth:javaPreCompileRelease
-> Task :feature:auth:prepareLintJarForPublish
-> Task :feature:auth:prepareReleaseArtProfile
-> Task :feature:auth:parseReleaseLocalResources
-> Task :feature:auth:processReleaseManifest
-> Task :feature:auth:writeReleaseAarMetadata
-> Task :feature:auth:generateReleaseRFile
-> Task :feature:auth:mapReleaseSourceSetPaths
+> Task :feature:auth:mergeReleaseAssets UP-TO-DATE
 > Task :feature:auth:compileReleaseKotlin NO-SOURCE
+> Task :feature:auth:javaPreCompileRelease UP-TO-DATE
 > Task :feature:auth:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:auth:extractReleaseAnnotations
-> Task :feature:auth:mergeReleaseGeneratedProguardFiles
+> Task :feature:auth:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:auth:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:auth:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:auth:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:auth:processReleaseManifest UP-TO-DATE
 > Task :feature:auth:processReleaseJavaRes NO-SOURCE
-> Task :feature:auth:mergeReleaseConsumerProguardFiles
-> Task :feature:auth:mergeReleaseJavaResource
-> Task :feature:auth:syncReleaseLibJars
-> Task :feature:auth:bundleReleaseAar
+> Task :feature:auth:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:auth:syncReleaseLibJars UP-TO-DATE
+> Task :feature:auth:di:lintVitalAnalyzeRelease
+> Task :feature:auth:writeReleaseAarMetadata UP-TO-DATE
+> Task :feature:auth:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:auth:bundleReleaseAar UP-TO-DATE
 > Task :feature:chats:preBuild UP-TO-DATE
 > Task :feature:chats:preReleaseBuild UP-TO-DATE
-> Task :feature:chats:checkReleaseAarMetadata
-> Task :feature:chats:mergeReleaseJniLibFolders
+> Task :feature:chats:checkReleaseAarMetadata UP-TO-DATE
+> Task :feature:chats:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:chats:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:chats:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:chats:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:chats:extractDeepLinksForAarRelease
-> Task :feature:chats:generateReleaseResources
-> Task :feature:chats:packageReleaseResources
-> Task :feature:chats:processReleaseNavigationResources
-> Task :feature:chats:parseReleaseLocalResources
-> Task :feature:chats:generateReleaseRFile
-> Task :feature:chats:extractReleaseAnnotations
+> Task :feature:chats:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:chats:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:chats:generateReleaseResources UP-TO-DATE
+> Task :feature:chats:packageReleaseResources UP-TO-DATE
+> Task :feature:chats:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:chats:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:chats:generateReleaseRFile UP-TO-DATE
+> Task :feature:auth:mergeReleaseResources UP-TO-DATE
+> Task :feature:chats:extractReleaseAnnotations UP-TO-DATE
 > Task :feature:chats:generateReleaseAssets UP-TO-DATE
-> Task :feature:chats:mergeReleaseAssets
+> Task :feature:chats:mergeReleaseAssets UP-TO-DATE
 > Task :feature:chats:compileReleaseKotlin NO-SOURCE
-> Task :feature:chats:javaPreCompileRelease
+> Task :feature:chats:javaPreCompileRelease UP-TO-DATE
 > Task :feature:chats:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:chats:mergeReleaseGeneratedProguardFiles
-> Task :feature:chats:mergeReleaseConsumerProguardFiles
-> Task :feature:chats:prepareLintJarForPublish
-> Task :feature:chats:prepareReleaseArtProfile
-> Task :feature:chats:processReleaseManifest
+> Task :feature:chats:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:chats:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:chats:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:chats:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:chats:processReleaseManifest UP-TO-DATE
 > Task :feature:chats:processReleaseJavaRes NO-SOURCE
-> Task :feature:chats:mergeReleaseJavaResource
-> Task :feature:chats:syncReleaseLibJars
-> Task :feature:chats:writeReleaseAarMetadata
-> Task :feature:chats:bundleReleaseAar
-> Task :feature:chats:mapReleaseSourceSetPaths
-> Task :core:ui-kit:verifyReleaseResources
-> Task :core:ui-kit:assembleRelease
+> Task :feature:auth:verifyReleaseResources UP-TO-DATE
+> Task :feature:auth:assembleRelease UP-TO-DATE
+> Task :feature:chats:writeReleaseAarMetadata UP-TO-DATE
+> Task :feature:chats:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:chats:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:chats:syncReleaseLibJars UP-TO-DATE
+> Task :feature:chats:bundleReleaseAar UP-TO-DATE
 > Task :feature:match:preBuild UP-TO-DATE
 > Task :feature:match:preReleaseBuild UP-TO-DATE
-> Task :feature:match:checkReleaseAarMetadata
-> Task :feature:match:mergeReleaseJniLibFolders
+> Task :feature:match:checkReleaseAarMetadata UP-TO-DATE
+> Task :feature:match:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:match:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:match:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:match:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:match:extractDeepLinksForAarRelease
-> Task :feature:match:generateReleaseResources
-> Task :feature:match:packageReleaseResources
-> Task :feature:match:processReleaseNavigationResources
-> Task :feature:match:parseReleaseLocalResources
-> Task :feature:match:generateReleaseRFile
-> Task :feature:match:extractReleaseAnnotations
+> Task :feature:match:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:match:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:match:generateReleaseResources UP-TO-DATE
+> Task :feature:match:packageReleaseResources UP-TO-DATE
+> Task :feature:match:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:match:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:match:generateReleaseRFile UP-TO-DATE
+> Task :feature:match:extractReleaseAnnotations UP-TO-DATE
 > Task :feature:match:generateReleaseAssets UP-TO-DATE
-> Task :feature:match:mergeReleaseAssets
+> Task :feature:match:mergeReleaseAssets UP-TO-DATE
 > Task :feature:match:compileReleaseKotlin NO-SOURCE
-> Task :feature:match:javaPreCompileRelease
+> Task :feature:match:javaPreCompileRelease UP-TO-DATE
 > Task :feature:match:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:match:mergeReleaseGeneratedProguardFiles
-> Task :feature:match:mergeReleaseConsumerProguardFiles
-> Task :feature:match:prepareLintJarForPublish
-> Task :feature:match:prepareReleaseArtProfile
-> Task :feature:match:processReleaseManifest
+> Task :feature:match:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:match:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:match:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:match:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:match:processReleaseManifest UP-TO-DATE
 > Task :feature:match:processReleaseJavaRes NO-SOURCE
-> Task :feature:match:mergeReleaseJavaResource
-> Task :feature:match:syncReleaseLibJars
-> Task :feature:match:writeReleaseAarMetadata
-> Task :feature:match:bundleReleaseAar
-> Task :feature:match:mapReleaseSourceSetPaths
-> Task :feature:chats:mergeReleaseResources
-> Task :feature:auth:mergeReleaseResources
-> Task :feature:match:mergeReleaseResources
-> Task :feature:auth:verifyReleaseResources
-> Task :feature:auth:assembleRelease
+> Task :feature:match:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:match:syncReleaseLibJars UP-TO-DATE
+> Task :feature:match:writeReleaseAarMetadata UP-TO-DATE
+> Task :feature:chats:mergeReleaseResources UP-TO-DATE
+> Task :feature:match:bundleReleaseAar UP-TO-DATE
+> Task :feature:match:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:chats:verifyReleaseResources UP-TO-DATE
+> Task :feature:chats:assembleRelease UP-TO-DATE
 > Task :feature:profile:preBuild UP-TO-DATE
 > Task :feature:profile:preReleaseBuild UP-TO-DATE
-> Task :feature:profile:checkReleaseAarMetadata
-> Task :feature:chats:verifyReleaseResources
-> Task :feature:chats:assembleRelease
-> Task :feature:profile:mergeReleaseJniLibFolders
+> Task :feature:profile:checkReleaseAarMetadata UP-TO-DATE
+> Task :feature:profile:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:profile:mergeReleaseNativeLibs NO-SOURCE
-> Task :feature:profile:extractDeepLinksForAarRelease
 > Task :feature:profile:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:profile:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:profile:generateReleaseResources
-> Task :feature:profile:processReleaseNavigationResources
+> Task :feature:match:mergeReleaseResources UP-TO-DATE
+> Task :feature:profile:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:profile:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:profile:generateReleaseResources UP-TO-DATE
+> Task :feature:profile:packageReleaseResources UP-TO-DATE
+> Task :feature:profile:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:profile:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:profile:generateReleaseRFile UP-TO-DATE
+> Task :feature:match:verifyReleaseResources UP-TO-DATE
+> Task :feature:match:assembleRelease UP-TO-DATE
 > Task :feature:profile:generateReleaseAssets UP-TO-DATE
-> Task :feature:profile:mergeReleaseAssets
-> Task :feature:profile:javaPreCompileRelease
-> Task :feature:profile:packageReleaseResources
-> Task :feature:profile:prepareLintJarForPublish
-> Task :feature:profile:prepareReleaseArtProfile
-> Task :feature:profile:parseReleaseLocalResources
-> Task :feature:profile:generateReleaseRFile
-> Task :feature:profile:processReleaseManifest
+> Task :feature:profile:extractReleaseAnnotations UP-TO-DATE
+> Task :feature:profile:mergeReleaseAssets UP-TO-DATE
 > Task :feature:profile:compileReleaseKotlin NO-SOURCE
+> Task :feature:profile:javaPreCompileRelease UP-TO-DATE
 > Task :feature:profile:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:profile:extractReleaseAnnotations
-> Task :feature:profile:mergeReleaseGeneratedProguardFiles
+> Task :feature:profile:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:profile:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:profile:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:profile:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:profile:processReleaseManifest UP-TO-DATE
+> Task :feature:profile:writeReleaseAarMetadata UP-TO-DATE
 > Task :feature:profile:processReleaseJavaRes NO-SOURCE
-> Task :feature:profile:mergeReleaseConsumerProguardFiles
-> Task :feature:profile:mergeReleaseJavaResource
-> Task :feature:profile:writeReleaseAarMetadata
-> Task :feature:profile:syncReleaseLibJars
-> Task :feature:profile:mapReleaseSourceSetPaths
-> Task :feature:profile:bundleReleaseAar
+> Task :feature:profile:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:profile:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:profile:syncReleaseLibJars UP-TO-DATE
+> Task :feature:profile:bundleReleaseAar UP-TO-DATE
 > Task :feature:search:preBuild UP-TO-DATE
 > Task :feature:search:preReleaseBuild UP-TO-DATE
-> Task :feature:search:checkReleaseAarMetadata
-> Task :feature:search:mergeReleaseJniLibFolders
+> Task :feature:search:checkReleaseAarMetadata UP-TO-DATE
+> Task :feature:search:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:search:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:search:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:search:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:search:extractDeepLinksForAarRelease
-> Task :feature:search:generateReleaseResources
-> Task :feature:search:packageReleaseResources
-> Task :feature:search:processReleaseNavigationResources
-> Task :feature:search:parseReleaseLocalResources
-> Task :feature:search:generateReleaseRFile
-> Task :feature:search:extractReleaseAnnotations
+> Task :feature:search:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:search:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:search:generateReleaseResources UP-TO-DATE
+> Task :feature:profile:mergeReleaseResources UP-TO-DATE
+> Task :feature:search:packageReleaseResources UP-TO-DATE
+> Task :feature:search:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:search:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:search:generateReleaseRFile UP-TO-DATE
+> Task :feature:search:extractReleaseAnnotations UP-TO-DATE
 > Task :feature:search:generateReleaseAssets UP-TO-DATE
-> Task :feature:search:mergeReleaseAssets
+> Task :feature:search:mergeReleaseAssets UP-TO-DATE
 > Task :feature:search:compileReleaseKotlin NO-SOURCE
-> Task :feature:search:javaPreCompileRelease
+> Task :feature:search:javaPreCompileRelease UP-TO-DATE
 > Task :feature:search:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:search:mergeReleaseGeneratedProguardFiles
-> Task :feature:search:mergeReleaseConsumerProguardFiles
-> Task :feature:search:prepareLintJarForPublish
-> Task :feature:search:prepareReleaseArtProfile
-> Task :feature:search:processReleaseManifest
+> Task :feature:profile:verifyReleaseResources UP-TO-DATE
+> Task :feature:profile:assembleRelease UP-TO-DATE
+> Task :feature:search:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:search:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:search:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:search:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:search:processReleaseManifest UP-TO-DATE
+> Task :feature:search:writeReleaseAarMetadata UP-TO-DATE
 > Task :feature:search:processReleaseJavaRes NO-SOURCE
-> Task :feature:search:mergeReleaseJavaResource
-> Task :feature:search:syncReleaseLibJars
-> Task :feature:search:writeReleaseAarMetadata
-> Task :feature:search:bundleReleaseAar
-> Task :feature:search:mapReleaseSourceSetPaths
-> Task :feature:match:verifyReleaseResources
-> Task :feature:match:assembleRelease
+> Task :feature:search:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:search:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:search:syncReleaseLibJars UP-TO-DATE
+> Task :feature:search:bundleReleaseAar UP-TO-DATE
 > Task :feature:auth:data:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:auth:data:copyReleaseJniLibsProjectAndLocalJars
+> Task :feature:auth:data:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
 > Task :feature:auth:data:bundleReleaseAar
-> Task :feature:profile:mergeReleaseResources
-> Task :feature:search:mergeReleaseResources
-> Task :feature:auth:data:mergeReleaseResources
+> Task :feature:auth:data:mergeReleaseResources UP-TO-DATE
+> Task :feature:search:mergeReleaseResources UP-TO-DATE
+> Task :feature:search:verifyReleaseResources UP-TO-DATE
+> Task :feature:search:assembleRelease UP-TO-DATE
+> Task :feature:auth:di:stripReleaseDebugSymbols NO-SOURCE
+> Task :feature:auth:di:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:auth:di:bundleReleaseAar
+> Task :feature:auth:presentation:compileReleaseKotlin
+> Task :core:ui-kit:mergeReleaseResources
+> Task :feature:auth:di:mergeReleaseResources UP-TO-DATE
 > Task :feature:auth:data:verifyReleaseResources
 > Task :feature:auth:data:assembleRelease
-> Task :feature:auth:di:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:auth:di:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:auth:di:bundleReleaseAar
-> Task :feature:profile:verifyReleaseResources
-> Task :feature:profile:assembleRelease
 > Task :feature:auth:domain:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:auth:domain:copyReleaseJniLibsProjectAndLocalJars
+> Task :feature:auth:domain:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :core:ui-kit:verifyReleaseResources
 > Task :feature:auth:domain:bundleReleaseAar
-> Task :feature:auth:domain:mergeReleaseResources
+> Task :core:ui-kit:assembleRelease
+> Task :feature:auth:presentation:stripReleaseDebugSymbols NO-SOURCE
+> Task :feature:auth:presentation:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:auth:domain:mergeReleaseResources UP-TO-DATE
 > Task :feature:auth:domain:verifyReleaseResources
 > Task :feature:auth:domain:assembleRelease
-> Task :feature:auth:presentation:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:auth:presentation:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:auth:di:mergeReleaseResources
-> Task :feature:auth:presentation:bundleReleaseAar
-> Task :feature:auth:di:verifyReleaseResources
-> Task :feature:auth:di:assembleRelease
 > Task :feature:chats:data:preBuild UP-TO-DATE
 > Task :feature:chats:data:preReleaseBuild UP-TO-DATE
 > Task :feature:chats:domain:preBuild UP-TO-DATE
 > Task :feature:chats:domain:preReleaseBuild UP-TO-DATE
 > Task :feature:chats:domain:writeReleaseAarMetadata
 > Task :feature:chats:data:checkReleaseAarMetadata
-> Task :feature:chats:data:mergeReleaseJniLibFolders
+> Task :feature:chats:data:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:chats:data:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:chats:data:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:chats:data:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:chats:data:extractDeepLinksForAarRelease
-> Task :feature:search:verifyReleaseResources
-> Task :feature:search:assembleRelease
-> Task :feature:chats:data:processReleaseNavigationResources
-> Task :feature:chats:data:generateReleaseResources
-> Task :feature:chats:domain:generateReleaseResources
-> Task :feature:chats:data:packageReleaseResources
-> Task :feature:chats:domain:packageReleaseResources
-> Task :feature:chats:domain:processReleaseNavigationResources
+> Task :feature:chats:data:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:chats:data:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:chats:data:generateReleaseResources UP-TO-DATE
+> Task :feature:auth:di:verifyReleaseResources
+> Task :feature:auth:di:assembleRelease
+> Task :feature:chats:data:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:chats:data:packageReleaseResources UP-TO-DATE
+> Task :feature:chats:domain:generateReleaseResources UP-TO-DATE
 > Task :feature:chats:data:parseReleaseLocalResources
-> Task :feature:chats:domain:parseReleaseLocalResources
+> Task :feature:chats:domain:packageReleaseResources UP-TO-DATE
+> Task :feature:chats:domain:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:chats:data:generateReleaseRFile
-> Task :feature:chats:domain:generateReleaseRFile
-> Task :feature:chats:domain:javaPreCompileRelease
+> Task :feature:chats:domain:javaPreCompileRelease UP-TO-DATE
 > Task :feature:chats:data:generateReleaseAssets UP-TO-DATE
-> Task :feature:chats:data:mergeReleaseAssets
-> Task :feature:chats:data:javaPreCompileRelease
-> Task :feature:chats:domain:compileReleaseKotlin NO-SOURCE
-> Task :feature:chats:data:prepareLintJarForPublish
-> Task :feature:chats:domain:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:chats:data:prepareReleaseArtProfile
-> Task :feature:chats:domain:bundleLibCompileToJarRelease
+> Task :feature:chats:data:mergeReleaseAssets UP-TO-DATE
+> Task :feature:chats:data:javaPreCompileRelease UP-TO-DATE
+> Task :feature:chats:data:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:chats:data:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:chats:domain:parseReleaseLocalResources
+> Task :feature:chats:domain:generateReleaseRFile
 > Task :feature:chats:data:processReleaseManifest
-> Task :feature:chats:data:extractReleaseAnnotations
+> Task :feature:chats:domain:compileReleaseKotlin NO-SOURCE
+> Task :feature:chats:domain:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:chats:domain:bundleLibCompileToJarRelease UP-TO-DATE
 > Task :feature:chats:data:writeReleaseAarMetadata
-> Task :feature:chats:data:mapReleaseSourceSetPaths
-> Task :feature:auth:presentation:mergeReleaseResources
-> Task :feature:chats:data:mergeReleaseResources
-> Task :feature:chats:domain:mapReleaseSourceSetPaths
-> Task :feature:chats:domain:compileReleaseLibraryResources
-> Task :feature:auth:presentation:verifyReleaseResources
-> Task :feature:auth:presentation:assembleRelease
+> Task :feature:chats:data:extractReleaseAnnotations
+> Task :feature:chats:data:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:chats:data:mergeReleaseResources UP-TO-DATE
+> Task :feature:chats:domain:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:chats:domain:compileReleaseLibraryResources UP-TO-DATE
+> Task :feature:chats:data:compileReleaseKotlin
+> Task :feature:chats:data:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:chats:data:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:chats:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:chats:data:processReleaseJavaRes UP-TO-DATE
+> Task :feature:chats:data:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:chats:data:syncReleaseLibJars UP-TO-DATE
+> Task :feature:chats:data:bundleReleaseAar
 > Task :feature:chats:di:preBuild UP-TO-DATE
 > Task :feature:chats:di:preReleaseBuild UP-TO-DATE
 > Task :feature:chats:di:checkReleaseAarMetadata
-> Task :feature:chats:di:mergeReleaseJniLibFolders
+> Task :feature:chats:di:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:chats:di:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:chats:di:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:chats:di:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:chats:di:extractDeepLinksForAarRelease
-> Task :feature:chats:di:generateReleaseResources
-> Task :feature:chats:di:packageReleaseResources
-> Task :feature:chats:di:processReleaseNavigationResources
+> Task :feature:chats:di:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:chats:di:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:chats:di:generateReleaseResources UP-TO-DATE
+> Task :feature:chats:di:packageReleaseResources UP-TO-DATE
+> Task :feature:chats:di:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:chats:di:parseReleaseLocalResources
 > Task :feature:chats:di:generateReleaseRFile
 > Task :feature:chats:di:extractReleaseAnnotations
 > Task :feature:chats:di:generateReleaseAssets UP-TO-DATE
-> Task :feature:chats:di:mergeReleaseAssets
+> Task :feature:chats:di:mergeReleaseAssets UP-TO-DATE
 > Task :feature:chats:di:compileReleaseKotlin NO-SOURCE
-> Task :feature:chats:di:javaPreCompileRelease
+> Task :feature:chats:di:javaPreCompileRelease UP-TO-DATE
 > Task :feature:chats:di:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:chats:di:mergeReleaseGeneratedProguardFiles
-> Task :feature:chats:di:mergeReleaseConsumerProguardFiles
+> Task :feature:chats:di:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:chats:di:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:chats:di:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:chats:di:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:chats:data:verifyReleaseResources
-> Task :feature:chats:di:prepareReleaseArtProfile
-> Task :feature:chats:di:prepareLintJarForPublish
+> Task :feature:chats:data:assembleRelease
 > Task :feature:chats:di:processReleaseJavaRes NO-SOURCE
-> Task :feature:chats:di:mergeReleaseJavaResource
 > Task :feature:chats:di:processReleaseManifest
-> Task :feature:chats:di:syncReleaseLibJars
+> Task :feature:chats:di:mergeReleaseJavaResource UP-TO-DATE
 > Task :feature:chats:di:writeReleaseAarMetadata
-> Task :feature:chats:di:mapReleaseSourceSetPaths
+> Task :feature:chats:di:syncReleaseLibJars UP-TO-DATE
+> Task :feature:chats:di:mapReleaseSourceSetPaths UP-TO-DATE
 > Task :feature:chats:di:bundleReleaseAar
+> Task :feature:chats:di:mergeReleaseResources UP-TO-DATE
 > Task :feature:chats:domain:checkReleaseAarMetadata
-> Task :feature:chats:domain:mergeReleaseJniLibFolders
+> Task :feature:chats:domain:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:chats:domain:mergeReleaseNativeLibs NO-SOURCE
-> Task :feature:chats:di:mergeReleaseResources
 > Task :feature:chats:domain:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:chats:domain:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:chats:domain:extractDeepLinksForAarRelease
-> Task :feature:chats:domain:extractReleaseAnnotations
-> Task :feature:chats:domain:generateReleaseAssets UP-TO-DATE
-> Task :feature:chats:domain:mergeReleaseAssets
-> Task :feature:chats:domain:mergeReleaseGeneratedProguardFiles
-> Task :feature:chats:domain:mergeReleaseConsumerProguardFiles
-> Task :feature:chats:domain:prepareLintJarForPublish
-> Task :feature:chats:domain:prepareReleaseArtProfile
-> Task :feature:chats:domain:processReleaseManifest
-> Task :feature:chats:domain:processReleaseJavaRes NO-SOURCE
-> Task :feature:chats:domain:mergeReleaseJavaResource
-> Task :feature:chats:domain:syncReleaseLibJars
-> Task :feature:chats:domain:bundleReleaseAar
-> Task :feature:chats:domain:mergeReleaseResources
+> Task :feature:chats:domain:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:chats:domain:extractDeepLinksForAarRelease UP-TO-DATE
 > Task :feature:chats:di:verifyReleaseResources
 > Task :feature:chats:di:assembleRelease
+> Task :feature:chats:domain:generateReleaseAssets UP-TO-DATE
+> Task :feature:chats:domain:mergeReleaseAssets UP-TO-DATE
+> Task :feature:chats:domain:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:chats:domain:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:chats:domain:extractReleaseAnnotations
+> Task :feature:chats:domain:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:chats:domain:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:chats:domain:processReleaseJavaRes NO-SOURCE
+> Task :feature:chats:domain:processReleaseManifest
+> Task :feature:chats:domain:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:chats:domain:mergeReleaseResources UP-TO-DATE
+> Task :feature:chats:domain:syncReleaseLibJars UP-TO-DATE
+> Task :feature:chats:domain:bundleReleaseAar
 > Task :feature:chats:presentation:preBuild UP-TO-DATE
 > Task :feature:chats:presentation:preReleaseBuild UP-TO-DATE
 > Task :feature:chats:presentation:checkReleaseAarMetadata
-> Task :feature:chats:presentation:mergeReleaseJniLibFolders
+> Task :feature:chats:presentation:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:chats:presentation:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:chats:presentation:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:chats:presentation:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:chats:presentation:extractDeepLinksForAarRelease
-> Task :feature:chats:presentation:generateReleaseResources
+> Task :feature:chats:presentation:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:chats:presentation:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:chats:presentation:generateReleaseResources UP-TO-DATE
+> Task :feature:chats:presentation:packageReleaseResources UP-TO-DATE
 > Task :feature:chats:domain:verifyReleaseResources
 > Task :feature:chats:domain:assembleRelease
-> Task :feature:chats:presentation:processReleaseNavigationResources
 > Task :feature:chats:presentation:generateReleaseAssets UP-TO-DATE
-> Task :feature:chats:presentation:mergeReleaseAssets
-> Task :feature:chats:presentation:packageReleaseResources
-> Task :feature:chats:presentation:javaPreCompileRelease
-> Task :feature:chats:presentation:prepareLintJarForPublish
+> Task :feature:chats:presentation:mergeReleaseAssets UP-TO-DATE
+> Task :feature:chats:presentation:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:chats:presentation:javaPreCompileRelease UP-TO-DATE
+> Task :feature:chats:presentation:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:chats:presentation:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:chats:presentation:parseReleaseLocalResources
-> Task :feature:chats:presentation:prepareReleaseArtProfile
-> Task :feature:chats:presentation:generateReleaseRFile
 > Task :feature:chats:presentation:processReleaseManifest
+> Task :feature:chats:presentation:writeReleaseAarMetadata
+> Task :feature:chats:presentation:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:chats:presentation:generateReleaseRFile
+> Task :feature:chats:presentation:mergeReleaseResources UP-TO-DATE
 > Task :feature:chats:presentation:compileReleaseKotlin NO-SOURCE
 > Task :feature:chats:presentation:extractReleaseAnnotations
-> Task :feature:chats:presentation:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:chats:presentation:mergeReleaseGeneratedProguardFiles
 > Task :feature:chats:presentation:processReleaseJavaRes NO-SOURCE
-> Task :feature:chats:presentation:mergeReleaseConsumerProguardFiles
-> Task :feature:chats:presentation:mergeReleaseJavaResource
-> Task :feature:chats:presentation:writeReleaseAarMetadata
-> Task :feature:chats:presentation:syncReleaseLibJars
-> Task :feature:chats:presentation:mapReleaseSourceSetPaths
+> Task :feature:chats:presentation:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:chats:presentation:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:chats:presentation:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:chats:presentation:syncReleaseLibJars UP-TO-DATE
+> Task :feature:chats:presentation:mergeReleaseConsumerProguardFiles UP-TO-DATE
 > Task :feature:chats:presentation:bundleReleaseAar
 > Task :feature:match:data:preBuild UP-TO-DATE
 > Task :feature:match:data:preReleaseBuild UP-TO-DATE
 > Task :feature:match:domain:preBuild UP-TO-DATE
 > Task :feature:match:domain:preReleaseBuild UP-TO-DATE
 > Task :feature:match:domain:writeReleaseAarMetadata
-> Task :feature:chats:presentation:mergeReleaseResources
 > Task :feature:match:data:checkReleaseAarMetadata
-> Task :feature:match:data:mergeReleaseJniLibFolders
+> Task :feature:match:data:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:match:data:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:match:data:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:match:data:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:match:data:extractDeepLinksForAarRelease
-> Task :feature:match:data:generateReleaseResources
-> Task :feature:match:data:packageReleaseResources
-> Task :feature:match:data:processReleaseNavigationResources
 > Task :feature:chats:presentation:verifyReleaseResources
 > Task :feature:chats:presentation:assembleRelease
-> Task :feature:match:domain:generateReleaseResources
-> Task :feature:match:data:parseReleaseLocalResources
-> Task :feature:match:data:generateReleaseRFile
-> Task :feature:match:domain:processReleaseNavigationResources
-> Task :feature:match:domain:packageReleaseResources
-> Task :feature:match:domain:javaPreCompileRelease
-> Task :feature:match:data:generateReleaseAssets UP-TO-DATE
+> Task :feature:match:data:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:match:data:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:match:data:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:match:data:generateReleaseResources UP-TO-DATE
+> Task :feature:match:domain:generateReleaseResources UP-TO-DATE
+> Task :feature:match:data:packageReleaseResources UP-TO-DATE
+> Task :feature:match:domain:packageReleaseResources UP-TO-DATE
+> Task :feature:match:domain:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:match:domain:parseReleaseLocalResources
-> Task :feature:match:data:mergeReleaseAssets
-> Task :feature:match:data:javaPreCompileRelease
+> Task :feature:match:data:parseReleaseLocalResources
 > Task :feature:match:domain:generateReleaseRFile
-> Task :feature:match:data:prepareLintJarForPublish
+> Task :feature:match:data:generateReleaseRFile
 > Task :feature:match:domain:compileReleaseKotlin NO-SOURCE
-> Task :feature:match:data:prepareReleaseArtProfile
+> Task :feature:match:data:generateReleaseAssets UP-TO-DATE
+> Task :feature:match:domain:javaPreCompileRelease UP-TO-DATE
 > Task :feature:match:domain:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:match:domain:bundleLibCompileToJarRelease
-> Task :feature:match:data:processReleaseManifest
+> Task :feature:match:data:mergeReleaseAssets UP-TO-DATE
+> Task :feature:match:data:javaPreCompileRelease UP-TO-DATE
+> Task :feature:match:domain:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :feature:match:data:prepareLintJarForPublish UP-TO-DATE
 > Task :feature:match:data:extractReleaseAnnotations
+> Task :feature:match:data:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:match:data:processReleaseManifest
 > Task :feature:match:data:writeReleaseAarMetadata
-> Task :feature:match:data:mapReleaseSourceSetPaths
-> Task :feature:match:data:mergeReleaseResources
-> Task :feature:match:domain:mapReleaseSourceSetPaths
-> Task :feature:match:domain:compileReleaseLibraryResources
-> Task :feature:match:data:verifyReleaseResources
+> Task :feature:match:data:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:match:data:mergeReleaseResources UP-TO-DATE
+> Task :feature:match:domain:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:match:domain:compileReleaseLibraryResources UP-TO-DATE
+> Task :feature:match:data:compileReleaseKotlin
+> Task :feature:match:data:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:match:data:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:match:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:match:data:processReleaseJavaRes UP-TO-DATE
+> Task :feature:match:data:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:match:data:syncReleaseLibJars UP-TO-DATE
+> Task :feature:match:data:bundleReleaseAar
 > Task :feature:match:di:preBuild UP-TO-DATE
 > Task :feature:match:di:preReleaseBuild UP-TO-DATE
 > Task :feature:match:di:checkReleaseAarMetadata
-> Task :feature:match:di:mergeReleaseJniLibFolders
+> Task :feature:match:di:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:match:di:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:match:di:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:match:di:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:match:di:extractDeepLinksForAarRelease
-> Task :feature:match:di:generateReleaseResources
-> Task :feature:match:di:packageReleaseResources
-> Task :feature:match:di:processReleaseNavigationResources
+> Task :feature:auth:presentation:mergeReleaseResources
+> Task :feature:match:di:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:match:di:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:match:di:generateReleaseResources UP-TO-DATE
+> Task :feature:match:di:packageReleaseResources UP-TO-DATE
+> Task :feature:match:di:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:match:di:parseReleaseLocalResources
 > Task :feature:match:di:generateReleaseRFile
 > Task :feature:match:di:extractReleaseAnnotations
 > Task :feature:match:di:generateReleaseAssets UP-TO-DATE
-> Task :feature:match:di:mergeReleaseAssets
+> Task :feature:match:di:mergeReleaseAssets UP-TO-DATE
 > Task :feature:match:di:compileReleaseKotlin NO-SOURCE
-> Task :feature:match:di:javaPreCompileRelease
+> Task :feature:match:di:javaPreCompileRelease UP-TO-DATE
 > Task :feature:match:di:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:match:di:mergeReleaseGeneratedProguardFiles
-> Task :feature:match:di:mergeReleaseConsumerProguardFiles
-> Task :feature:match:di:prepareLintJarForPublish
-> Task :feature:match:di:prepareReleaseArtProfile
-> Task :feature:match:di:processReleaseManifest
+> Task :feature:match:di:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:match:di:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:match:di:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:match:di:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:match:data:verifyReleaseResources
+> Task :feature:match:data:assembleRelease
 > Task :feature:match:di:processReleaseJavaRes NO-SOURCE
-> Task :feature:match:di:mergeReleaseJavaResource
-> Task :feature:match:di:syncReleaseLibJars
+> Task :feature:match:di:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:match:di:syncReleaseLibJars UP-TO-DATE
 > Task :feature:match:di:writeReleaseAarMetadata
+> Task :feature:match:di:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:match:di:processReleaseManifest
 > Task :feature:match:di:bundleReleaseAar
-> Task :feature:match:di:mapReleaseSourceSetPaths
-> Task :feature:match:di:mergeReleaseResources
-> Task :feature:match:di:verifyReleaseResources
-> Task :feature:match:di:assembleRelease
+> Task :feature:match:di:mergeReleaseResources UP-TO-DATE
 > Task :feature:match:domain:checkReleaseAarMetadata
-> Task :feature:match:domain:mergeReleaseJniLibFolders
+> Task :feature:match:domain:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:match:domain:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:match:domain:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:match:domain:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:match:domain:extractDeepLinksForAarRelease
+> Task :feature:match:domain:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:match:domain:extractDeepLinksForAarRelease UP-TO-DATE
 > Task :feature:match:domain:extractReleaseAnnotations
 > Task :feature:match:domain:generateReleaseAssets UP-TO-DATE
-> Task :feature:match:domain:mergeReleaseAssets
-> Task :feature:match:domain:mergeReleaseGeneratedProguardFiles
-> Task :feature:match:domain:mergeReleaseConsumerProguardFiles
-> Task :feature:match:domain:prepareLintJarForPublish
-> Task :feature:match:domain:prepareReleaseArtProfile
+> Task :feature:match:domain:mergeReleaseAssets UP-TO-DATE
+> Task :feature:match:domain:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:match:domain:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:match:domain:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:match:domain:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:match:domain:processReleaseManifest
 > Task :feature:match:domain:processReleaseJavaRes NO-SOURCE
-> Task :feature:match:domain:mergeReleaseJavaResource
-> Task :feature:match:domain:syncReleaseLibJars
+> Task :feature:match:di:verifyReleaseResources
+> Task :feature:match:di:assembleRelease
+> Task :feature:match:domain:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:match:domain:mergeReleaseResources UP-TO-DATE
+> Task :feature:match:domain:syncReleaseLibJars UP-TO-DATE
 > Task :feature:match:domain:bundleReleaseAar
-> Task :feature:match:domain:mergeReleaseResources
-> Task :feature:match:domain:verifyReleaseResources
-> Task :feature:match:domain:assembleRelease
 > Task :feature:match:presentation:preBuild UP-TO-DATE
 > Task :feature:match:presentation:preReleaseBuild UP-TO-DATE
 > Task :feature:match:presentation:checkReleaseAarMetadata
-> Task :feature:match:presentation:mergeReleaseJniLibFolders
+> Task :feature:match:presentation:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:match:presentation:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:match:presentation:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:match:presentation:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:match:presentation:extractDeepLinksForAarRelease
-> Task :feature:match:presentation:generateReleaseResources
-> Task :feature:match:presentation:packageReleaseResources
-> Task :feature:match:presentation:processReleaseNavigationResources
+> Task :feature:match:presentation:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:match:presentation:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:match:presentation:generateReleaseResources UP-TO-DATE
+> Task :feature:match:presentation:packageReleaseResources UP-TO-DATE
+> Task :feature:match:presentation:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:match:presentation:parseReleaseLocalResources
 > Task :feature:match:presentation:generateReleaseRFile
 > Task :feature:match:presentation:extractReleaseAnnotations
 > Task :feature:match:presentation:generateReleaseAssets UP-TO-DATE
-> Task :feature:match:presentation:mergeReleaseAssets
+> Task :feature:match:presentation:mergeReleaseAssets UP-TO-DATE
 > Task :feature:match:presentation:compileReleaseKotlin NO-SOURCE
-> Task :feature:match:presentation:javaPreCompileRelease
+> Task :feature:match:presentation:javaPreCompileRelease UP-TO-DATE
 > Task :feature:match:presentation:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:match:presentation:mergeReleaseGeneratedProguardFiles
-> Task :feature:match:presentation:mergeReleaseConsumerProguardFiles
-> Task :feature:match:presentation:prepareLintJarForPublish
-> Task :feature:match:presentation:prepareReleaseArtProfile
-> Task :feature:match:presentation:processReleaseManifest
+> Task :feature:match:presentation:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:match:presentation:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:match:presentation:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:match:domain:verifyReleaseResources
+> Task :feature:match:domain:assembleRelease
+> Task :feature:match:presentation:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:match:presentation:processReleaseJavaRes NO-SOURCE
-> Task :feature:match:presentation:mergeReleaseJavaResource
-> Task :feature:match:presentation:syncReleaseLibJars
+> Task :feature:match:presentation:processReleaseManifest
+> Task :feature:match:presentation:mergeReleaseJavaResource UP-TO-DATE
 > Task :feature:match:presentation:writeReleaseAarMetadata
+> Task :feature:match:presentation:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:match:presentation:mergeReleaseResources UP-TO-DATE
+> Task :feature:match:presentation:syncReleaseLibJars UP-TO-DATE
 > Task :feature:match:presentation:bundleReleaseAar
-> Task :feature:match:presentation:mapReleaseSourceSetPaths
-> Task :app:compileReleaseKotlin
-> Task :feature:match:presentation:mergeReleaseResources
-> Task :feature:match:presentation:verifyReleaseResources
-> Task :feature:match:presentation:assembleRelease
 > Task :feature:profile:data:preBuild UP-TO-DATE
 > Task :feature:profile:data:preReleaseBuild UP-TO-DATE
 > Task :feature:profile:domain:preBuild UP-TO-DATE
 > Task :feature:profile:domain:preReleaseBuild UP-TO-DATE
 > Task :feature:profile:domain:writeReleaseAarMetadata
 > Task :feature:profile:data:checkReleaseAarMetadata
-> Task :feature:profile:data:mergeReleaseJniLibFolders
+> Task :feature:profile:data:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:profile:data:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:profile:data:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:profile:data:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:profile:data:extractDeepLinksForAarRelease
-> Task :feature:profile:data:generateReleaseResources
-> Task :feature:profile:data:packageReleaseResources
-> Task :feature:profile:data:processReleaseNavigationResources
+> Task :feature:profile:data:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:profile:data:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:auth:presentation:verifyReleaseResources
+> Task :feature:profile:data:generateReleaseResources UP-TO-DATE
+> Task :feature:profile:data:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:profile:domain:generateReleaseResources UP-TO-DATE
+> Task :feature:profile:data:packageReleaseResources UP-TO-DATE
+> Task :feature:profile:domain:packageReleaseResources UP-TO-DATE
+> Task :feature:profile:domain:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:match:presentation:verifyReleaseResources
+> Task :feature:match:presentation:assembleRelease
 > Task :feature:profile:data:parseReleaseLocalResources
-> Task :feature:profile:data:generateReleaseRFile
-> Task :feature:profile:domain:generateReleaseResources
-> Task :feature:profile:domain:packageReleaseResources
-> Task :feature:profile:domain:processReleaseNavigationResources
-> Task :feature:profile:domain:parseReleaseLocalResources
-> Task :feature:profile:domain:generateReleaseRFile
-> Task :feature:profile:domain:compileReleaseKotlin NO-SOURCE
-> Task :feature:profile:domain:javaPreCompileRelease
-> Task :feature:profile:domain:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:profile:domain:bundleLibCompileToJarRelease
-> Task :feature:profile:data:extractReleaseAnnotations
+> Task :feature:profile:domain:javaPreCompileRelease UP-TO-DATE
 > Task :feature:profile:data:generateReleaseAssets UP-TO-DATE
-> Task :feature:profile:data:mergeReleaseAssets
-> Task :feature:chats:data:compileReleaseKotlin
-> Task :feature:chats:data:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:match:data:compileReleaseKotlin
-> Task :feature:chats:data:mergeReleaseGeneratedProguardFiles
-> Task :feature:chats:data:mergeReleaseConsumerProguardFiles
-> Task :feature:chats:data:processReleaseJavaRes
-> Task :feature:match:data:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:match:data:mergeReleaseGeneratedProguardFiles
-> Task :feature:match:data:mergeReleaseConsumerProguardFiles
-> Task :feature:chats:data:mergeReleaseJavaResource
-> Task :feature:chats:data:syncReleaseLibJars
-> Task :feature:match:data:processReleaseJavaRes
-> Task :feature:chats:data:bundleReleaseAar
-> Task :feature:chats:data:assembleRelease
-> Task :feature:match:data:mergeReleaseJavaResource
-> Task :feature:profile:data:javaPreCompileRelease
-> Task :feature:profile:data:prepareLintJarForPublish
-> Task :feature:match:data:syncReleaseLibJars
-> Task :feature:profile:data:prepareReleaseArtProfile
-> Task :feature:match:data:bundleReleaseAar
-> Task :feature:match:data:assembleRelease
+> Task :feature:profile:domain:parseReleaseLocalResources
+> Task :feature:profile:data:mergeReleaseAssets UP-TO-DATE
+> Task :feature:profile:data:generateReleaseRFile
+> Task :feature:profile:data:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:profile:data:javaPreCompileRelease UP-TO-DATE
+> Task :feature:profile:domain:generateReleaseRFile
+> Task :feature:profile:data:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:profile:data:writeReleaseAarMetadata
-> Task :feature:profile:data:mapReleaseSourceSetPaths
+> Task :feature:profile:data:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:profile:domain:compileReleaseKotlin NO-SOURCE
 > Task :feature:profile:data:processReleaseManifest
-> Task :feature:profile:domain:mapReleaseSourceSetPaths
-> Task :feature:profile:domain:compileReleaseLibraryResources
+> Task :feature:profile:domain:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:profile:domain:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:profile:domain:compileReleaseLibraryResources UP-TO-DATE
 > Task :feature:profile:di:preBuild UP-TO-DATE
+> Task :feature:profile:domain:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :feature:profile:data:extractReleaseAnnotations
 > Task :feature:profile:di:preReleaseBuild UP-TO-DATE
 > Task :feature:profile:di:checkReleaseAarMetadata
-> Task :feature:profile:di:mergeReleaseJniLibFolders
+> Task :feature:profile:di:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:profile:di:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:profile:di:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:profile:di:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:profile:di:extractDeepLinksForAarRelease
-> Task :feature:profile:di:generateReleaseResources
-> Task :feature:profile:di:packageReleaseResources
-> Task :feature:profile:di:processReleaseNavigationResources
+> Task :feature:profile:di:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:profile:data:mergeReleaseResources UP-TO-DATE
+> Task :feature:profile:di:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:profile:di:generateReleaseResources UP-TO-DATE
+> Task :feature:profile:di:packageReleaseResources UP-TO-DATE
+> Task :feature:profile:di:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:profile:di:parseReleaseLocalResources
 > Task :feature:profile:di:generateReleaseRFile
 > Task :feature:profile:di:extractReleaseAnnotations
 > Task :feature:profile:di:generateReleaseAssets UP-TO-DATE
-> Task :feature:profile:di:mergeReleaseAssets
+> Task :feature:profile:di:mergeReleaseAssets UP-TO-DATE
 > Task :feature:profile:di:compileReleaseKotlin NO-SOURCE
-> Task :feature:profile:di:javaPreCompileRelease
+> Task :feature:profile:di:javaPreCompileRelease UP-TO-DATE
 > Task :feature:profile:di:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:profile:di:mergeReleaseGeneratedProguardFiles
-> Task :feature:profile:di:mergeReleaseConsumerProguardFiles
-> Task :feature:profile:di:prepareLintJarForPublish
-> Task :feature:profile:di:prepareReleaseArtProfile
+> Task :feature:profile:di:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:profile:di:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:profile:di:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:profile:di:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:profile:di:processReleaseManifest
 > Task :feature:profile:di:processReleaseJavaRes NO-SOURCE
-> Task :feature:profile:di:mergeReleaseJavaResource
-> Task :feature:profile:di:syncReleaseLibJars
+> Task :feature:profile:di:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:profile:di:syncReleaseLibJars UP-TO-DATE
 > Task :feature:profile:di:writeReleaseAarMetadata
 > Task :feature:profile:di:bundleReleaseAar
-> Task :feature:profile:di:mapReleaseSourceSetPaths
-> Task :feature:profile:di:mergeReleaseResources
-> Task :feature:profile:di:verifyReleaseResources
-> Task :feature:profile:di:assembleRelease
+> Task :feature:profile:data:compileReleaseKotlin
+> Task :feature:profile:di:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:profile:data:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:profile:data:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:profile:data:processReleaseJavaRes UP-TO-DATE
+> Task :feature:profile:data:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:profile:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:profile:data:syncReleaseLibJars UP-TO-DATE
+> Task :feature:profile:di:mergeReleaseResources UP-TO-DATE
+> Task :feature:profile:data:bundleReleaseAar
 > Task :feature:profile:domain:checkReleaseAarMetadata
-> Task :feature:profile:data:mergeReleaseResources
-> Task :feature:profile:domain:mergeReleaseJniLibFolders
+> Task :feature:profile:domain:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:profile:domain:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:profile:domain:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:profile:domain:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:profile:domain:extractDeepLinksForAarRelease
+> Task :feature:profile:domain:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:profile:domain:extractDeepLinksForAarRelease UP-TO-DATE
 > Task :feature:profile:domain:extractReleaseAnnotations
 > Task :feature:profile:domain:generateReleaseAssets UP-TO-DATE
-> Task :feature:profile:domain:mergeReleaseAssets
-> Task :feature:profile:domain:mergeReleaseGeneratedProguardFiles
-> Task :feature:profile:domain:mergeReleaseConsumerProguardFiles
-> Task :feature:profile:domain:prepareLintJarForPublish
-> Task :feature:profile:domain:prepareReleaseArtProfile
-> Task :feature:profile:domain:processReleaseManifest
+> Task :feature:profile:domain:mergeReleaseAssets UP-TO-DATE
+> Task :feature:profile:domain:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:profile:domain:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:profile:domain:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:profile:domain:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:profile:di:verifyReleaseResources
+> Task :feature:profile:di:assembleRelease
 > Task :feature:profile:domain:processReleaseJavaRes NO-SOURCE
-> Task :feature:profile:domain:mergeReleaseJavaResource
-> Task :feature:profile:domain:syncReleaseLibJars
-> Task :feature:profile:domain:bundleReleaseAar
-> Task :feature:profile:domain:mergeReleaseResources
 > Task :feature:profile:data:verifyReleaseResources
+> Task :feature:profile:data:assembleRelease
+> Task :feature:profile:domain:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:profile:domain:mergeReleaseResources UP-TO-DATE
+> Task :feature:profile:domain:syncReleaseLibJars UP-TO-DATE
+> Task :feature:profile:presentation:generateReleaseAssets UP-TO-DATE
+> Task :feature:profile:domain:processReleaseManifest
+> Task :feature:profile:presentation:prepareLintJarForPublish UP-TO-DATE
 > Task :feature:profile:presentation:preBuild UP-TO-DATE
 > Task :feature:profile:presentation:preReleaseBuild UP-TO-DATE
 > Task :feature:profile:presentation:checkReleaseAarMetadata
-> Task :feature:profile:presentation:mergeReleaseJniLibFolders
+> Task :feature:profile:domain:bundleReleaseAar
+> Task :feature:profile:presentation:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:profile:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :feature:profile:presentation:generateReleaseResources UP-TO-DATE
 > Task :feature:profile:presentation:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:profile:presentation:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:profile:presentation:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:profile:presentation:extractDeepLinksForAarRelease
-> Task :feature:profile:presentation:generateReleaseResources
-> Task :feature:profile:domain:verifyReleaseResources
-> Task :feature:profile:domain:assembleRelease
-> Task :feature:profile:presentation:processReleaseNavigationResources
-> Task :feature:profile:presentation:generateReleaseAssets UP-TO-DATE
-> Task :feature:profile:presentation:packageReleaseResources
-> Task :feature:profile:presentation:mergeReleaseAssets
-> Task :feature:profile:presentation:javaPreCompileRelease
+> Task :feature:profile:presentation:packageReleaseResources UP-TO-DATE
+> Task :feature:profile:presentation:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:profile:presentation:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:profile:presentation:mergeReleaseAssets UP-TO-DATE
+> Task :feature:profile:presentation:javaPreCompileRelease UP-TO-DATE
 > Task :feature:profile:presentation:parseReleaseLocalResources
-> Task :feature:profile:presentation:prepareLintJarForPublish
+> Task :feature:profile:presentation:prepareReleaseArtProfile UP-TO-DATE
 > Task :feature:profile:presentation:generateReleaseRFile
-> Task :feature:profile:presentation:prepareReleaseArtProfile
+> Task :feature:profile:presentation:processReleaseManifest
 > Task :feature:profile:presentation:compileReleaseKotlin NO-SOURCE
 > Task :feature:profile:presentation:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:profile:presentation:mergeReleaseGeneratedProguardFiles
 > Task :feature:profile:presentation:extractReleaseAnnotations
-> Task :feature:profile:presentation:mergeReleaseConsumerProguardFiles
-> Task :feature:profile:presentation:processReleaseJavaRes NO-SOURCE
-> Task :feature:profile:presentation:processReleaseManifest
+> Task :feature:profile:presentation:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:profile:domain:verifyReleaseResources
+> Task :feature:profile:domain:assembleRelease
 > Task :feature:profile:presentation:writeReleaseAarMetadata
-> Task :feature:profile:presentation:mergeReleaseJavaResource
-> Task :feature:profile:presentation:mapReleaseSourceSetPaths
-> Task :feature:profile:presentation:syncReleaseLibJars
-> Task :feature:profile:presentation:bundleReleaseAar
+> Task :feature:profile:presentation:processReleaseJavaRes NO-SOURCE
+> Task :feature:profile:presentation:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:profile:presentation:mergeReleaseConsumerProguardFiles UP-TO-DATE
 > Task :feature:search:data:preBuild UP-TO-DATE
 > Task :feature:search:data:preReleaseBuild UP-TO-DATE
 > Task :feature:search:domain:preBuild UP-TO-DATE
 > Task :feature:search:domain:preReleaseBuild UP-TO-DATE
-> Task :feature:profile:presentation:mergeReleaseResources
+> Task :feature:profile:presentation:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:profile:presentation:mergeReleaseResources UP-TO-DATE
+> Task :feature:profile:presentation:syncReleaseLibJars UP-TO-DATE
 > Task :feature:search:domain:writeReleaseAarMetadata
+> Task :feature:profile:presentation:bundleReleaseAar
+> Task :feature:search:data:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:search:data:checkReleaseAarMetadata
-> Task :feature:search:data:mergeReleaseJniLibFolders
+> Task :feature:search:data:extractDeepLinksForAarRelease UP-TO-DATE
 > Task :feature:search:data:mergeReleaseNativeLibs NO-SOURCE
+> Task :feature:search:data:generateReleaseResources UP-TO-DATE
 > Task :feature:search:data:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:search:data:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:search:data:extractDeepLinksForAarRelease
-> Task :feature:search:data:generateReleaseResources
-> Task :feature:search:data:packageReleaseResources
-> Task :feature:search:data:processReleaseNavigationResources
+> Task :feature:search:data:packageReleaseResources UP-TO-DATE
+> Task :feature:search:data:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:search:data:processReleaseNavigationResources UP-TO-DATE
+> Task :feature:search:domain:generateReleaseResources UP-TO-DATE
+> Task :feature:search:domain:packageReleaseResources UP-TO-DATE
+> Task :feature:search:domain:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:search:data:parseReleaseLocalResources
+> Task :feature:search:domain:parseReleaseLocalResources
 > Task :feature:search:data:generateReleaseRFile
+> Task :feature:search:domain:generateReleaseRFile
+> Task :feature:search:domain:javaPreCompileRelease UP-TO-DATE
+> Task :feature:search:data:generateReleaseAssets UP-TO-DATE
+> Task :feature:search:data:mergeReleaseAssets UP-TO-DATE
+> Task :feature:search:data:javaPreCompileRelease UP-TO-DATE
+> Task :feature:search:domain:compileReleaseKotlin NO-SOURCE
+> Task :feature:search:data:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:search:data:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:search:domain:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:search:domain:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :feature:search:data:processReleaseManifest
+> Task :feature:search:data:compileReleaseKotlin NO-SOURCE
 > Task :feature:profile:presentation:verifyReleaseResources
 > Task :feature:profile:presentation:assembleRelease
-> Task :feature:search:domain:processReleaseNavigationResources
-> Task :feature:search:domain:generateReleaseResources
-> Task :feature:search:domain:javaPreCompileRelease
-> Task :feature:search:data:generateReleaseAssets UP-TO-DATE
-> Task :feature:search:data:mergeReleaseAssets
-> Task :feature:search:domain:packageReleaseResources
-> Task :feature:search:data:javaPreCompileRelease
-> Task :feature:search:data:prepareLintJarForPublish
-> Task :feature:search:data:prepareReleaseArtProfile
-> Task :feature:search:domain:parseReleaseLocalResources
-> Task :feature:search:domain:generateReleaseRFile
-> Task :feature:search:domain:compileReleaseKotlin NO-SOURCE
-> Task :feature:search:data:processReleaseManifest
-> Task :feature:search:domain:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:search:data:writeReleaseAarMetadata
-> Task :feature:search:domain:bundleLibCompileToJarRelease
-> Task :feature:search:data:mapReleaseSourceSetPaths
-> Task :feature:search:data:extractReleaseAnnotations
-> Task :feature:search:data:compileReleaseKotlin NO-SOURCE
-> Task :feature:search:data:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:search:data:mergeReleaseGeneratedProguardFiles
-> Task :feature:search:data:mergeReleaseConsumerProguardFiles
 > Task :feature:search:data:processReleaseJavaRes NO-SOURCE
-> Task :feature:search:data:mergeReleaseJavaResource
-> Task :feature:search:data:syncReleaseLibJars
-> Task :feature:search:data:bundleReleaseAar
-> Task :feature:search:domain:mapReleaseSourceSetPaths
-> Task :feature:search:domain:compileReleaseLibraryResources
+> Task :feature:search:data:extractReleaseAnnotations
+> Task :feature:search:data:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:search:data:writeReleaseAarMetadata
+> Task :feature:search:data:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:search:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:search:data:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:search:data:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:search:domain:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:search:data:syncReleaseLibJars UP-TO-DATE
+> Task :feature:search:domain:compileReleaseLibraryResources UP-TO-DATE
 > Task :feature:search:di:preBuild UP-TO-DATE
 > Task :feature:search:di:preReleaseBuild UP-TO-DATE
 > Task :feature:search:di:checkReleaseAarMetadata
-> Task :feature:search:di:mergeReleaseJniLibFolders
+> Task :feature:search:di:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:search:di:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:search:di:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:search:di:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:search:di:extractDeepLinksForAarRelease
-> Task :feature:search:di:generateReleaseResources
-> Task :feature:search:di:packageReleaseResources
-> Task :feature:search:di:processReleaseNavigationResources
-> Task :feature:search:di:parseReleaseLocalResources
-> Task :feature:search:di:generateReleaseRFile
-> Task :feature:search:di:extractReleaseAnnotations
+> Task :feature:search:data:bundleReleaseAar
+> Task :feature:search:di:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:search:di:generateReleaseResources UP-TO-DATE
+> Task :feature:search:di:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:search:di:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:search:di:generateReleaseAssets UP-TO-DATE
-> Task :feature:search:di:mergeReleaseAssets
-> Task :feature:search:di:compileReleaseKotlin NO-SOURCE
-> Task :feature:search:di:javaPreCompileRelease
-> Task :feature:search:di:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:search:di:mergeReleaseGeneratedProguardFiles
-> Task :feature:search:di:mergeReleaseConsumerProguardFiles
-> Task :feature:search:di:prepareLintJarForPublish
-> Task :feature:search:di:prepareReleaseArtProfile
+> Task :feature:search:di:packageReleaseResources UP-TO-DATE
+> Task :feature:search:di:parseReleaseLocalResources
+> Task :feature:search:di:mergeReleaseAssets UP-TO-DATE
+> Task :feature:search:di:javaPreCompileRelease UP-TO-DATE
+> Task :feature:search:di:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:search:di:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:search:di:generateReleaseRFile
 > Task :feature:search:di:processReleaseManifest
-> Task :feature:search:di:processReleaseJavaRes NO-SOURCE
-> Task :feature:search:di:mergeReleaseJavaResource
-> Task :feature:search:di:syncReleaseLibJars
+> Task :feature:search:di:extractReleaseAnnotations
 > Task :feature:search:di:writeReleaseAarMetadata
+> Task :feature:search:di:compileReleaseKotlin NO-SOURCE
+> Task :feature:search:di:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :feature:search:di:processReleaseJavaRes NO-SOURCE
+> Task :feature:search:di:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:search:di:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:search:di:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:search:data:mergeReleaseResources UP-TO-DATE
+> Task :feature:search:di:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:search:di:mergeReleaseResources UP-TO-DATE
+> Task :feature:search:di:syncReleaseLibJars UP-TO-DATE
 > Task :feature:search:di:bundleReleaseAar
-> Task :feature:search:di:mapReleaseSourceSetPaths
-> Task :feature:search:di:mergeReleaseResources
-> Task :feature:profile:data:compileReleaseKotlin
-> Task :feature:profile:data:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:profile:data:mergeReleaseGeneratedProguardFiles
-> Task :feature:profile:data:mergeReleaseConsumerProguardFiles
-> Task :feature:profile:data:processReleaseJavaRes
-> Task :feature:profile:data:mergeReleaseJavaResource
-> Task :feature:search:di:verifyReleaseResources
-> Task :feature:search:di:assembleRelease
 > Task :feature:search:domain:checkReleaseAarMetadata
-> Task :feature:search:data:mergeReleaseResources
-> Task :feature:profile:data:syncReleaseLibJars
-> Task :feature:search:domain:mergeReleaseJniLibFolders
+> Task :feature:search:domain:mergeReleaseJniLibFolders UP-TO-DATE
 > Task :feature:search:domain:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:search:domain:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:profile:data:bundleReleaseAar
-> Task :feature:profile:data:assembleRelease
-> Task :feature:search:domain:extractDeepLinksForAarRelease
+> Task :feature:search:domain:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:search:domain:extractDeepLinksForAarRelease UP-TO-DATE
 > Task :feature:search:domain:extractReleaseAnnotations
 > Task :feature:search:domain:generateReleaseAssets UP-TO-DATE
-> Task :feature:search:domain:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:search:domain:mergeReleaseGeneratedProguardFiles
-> Task :feature:search:domain:mergeReleaseConsumerProguardFiles
-> Task :feature:search:domain:prepareLintJarForPublish
-> Task :feature:search:domain:mergeReleaseAssets
-> Task :feature:search:domain:prepareReleaseArtProfile
+> Task :feature:search:domain:mergeReleaseAssets UP-TO-DATE
+> Task :feature:search:domain:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:search:domain:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:search:domain:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:search:domain:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:search:di:verifyReleaseResources
+> Task :feature:search:di:assembleRelease
 > Task :feature:search:domain:processReleaseJavaRes NO-SOURCE
-> Task :feature:search:domain:processReleaseManifest
-> Task :feature:search:domain:mergeReleaseJavaResource
-> Task :feature:search:domain:syncReleaseLibJars
-> Task :feature:search:domain:mergeReleaseResources
-> Task :feature:search:domain:bundleReleaseAar
+> Task :feature:search:domain:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:search:domain:syncReleaseLibJars UP-TO-DATE
+> Task :feature:search:domain:mergeReleaseResources UP-TO-DATE
 > Task :feature:search:presentation:preBuild UP-TO-DATE
 > Task :feature:search:presentation:preReleaseBuild UP-TO-DATE
 > Task :feature:search:presentation:checkReleaseAarMetadata
-> Task :feature:search:presentation:mergeReleaseJniLibFolders
+> Task :feature:search:domain:processReleaseManifest
+> Task :feature:search:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :feature:search:domain:bundleReleaseAar
 > Task :feature:search:presentation:mergeReleaseNativeLibs NO-SOURCE
 > Task :feature:search:presentation:stripReleaseDebugSymbols NO-SOURCE
-> Task :feature:search:presentation:copyReleaseJniLibsProjectAndLocalJars
-> Task :feature:search:presentation:extractDeepLinksForAarRelease
-> Task :feature:search:presentation:generateReleaseResources
-> Task :feature:search:presentation:packageReleaseResources
-> Task :feature:search:presentation:processReleaseNavigationResources
+> Task :feature:search:presentation:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:search:presentation:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:search:presentation:generateReleaseResources UP-TO-DATE
+> Task :feature:search:presentation:packageReleaseResources UP-TO-DATE
+> Task :feature:search:presentation:processReleaseNavigationResources UP-TO-DATE
 > Task :feature:search:presentation:parseReleaseLocalResources
 > Task :feature:search:presentation:generateReleaseRFile
-> Task :feature:search:data:verifyReleaseResources
-> Task :feature:search:data:assembleRelease
-> Task :feature:search:presentation:generateReleaseAssets UP-TO-DATE
-> Task :feature:search:presentation:mergeReleaseAssets
 > Task :feature:search:presentation:extractReleaseAnnotations
+> Task :feature:search:presentation:generateReleaseAssets UP-TO-DATE
+> Task :feature:search:presentation:mergeReleaseAssets UP-TO-DATE
 > Task :feature:search:presentation:compileReleaseKotlin NO-SOURCE
-> Task :feature:search:presentation:javaPreCompileRelease
-> Task :feature:search:presentation:prepareLintJarForPublish
+> Task :feature:search:presentation:javaPreCompileRelease UP-TO-DATE
 > Task :feature:search:presentation:compileReleaseJavaWithJavac NO-SOURCE
-> Task :feature:search:presentation:mergeReleaseGeneratedProguardFiles
-> Task :feature:search:presentation:prepareReleaseArtProfile
-> Task :feature:search:presentation:mergeReleaseConsumerProguardFiles
-> Task :feature:search:presentation:processReleaseJavaRes NO-SOURCE
-> Task :feature:search:presentation:processReleaseManifest
 > Task :feature:search:domain:verifyReleaseResources
 > Task :feature:search:domain:assembleRelease
-> Task :feature:search:presentation:mergeReleaseJavaResource
-> Task :feature:search:presentation:mapReleaseSourceSetPaths
+> Task :feature:search:presentation:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:search:presentation:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:search:presentation:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:search:presentation:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:search:presentation:processReleaseJavaRes NO-SOURCE
+> Task :feature:search:presentation:processReleaseManifest
+> Task :feature:search:presentation:mergeReleaseJavaResource UP-TO-DATE
 > Task :feature:search:presentation:writeReleaseAarMetadata
-> Task :feature:search:presentation:syncReleaseLibJars
+> Task :feature:search:presentation:syncReleaseLibJars UP-TO-DATE
+> Task :feature:search:presentation:mapReleaseSourceSetPaths UP-TO-DATE
 > Task :feature:search:presentation:bundleReleaseAar
-> Task :feature:search:presentation:mergeReleaseResources
+> Task :feature:search:data:verifyReleaseResources
+> Task :feature:search:data:assembleRelease
+> Task :feature:search:presentation:mergeReleaseResources UP-TO-DATE
 > Task :feature:search:presentation:verifyReleaseResources
 > Task :feature:search:presentation:assembleRelease
 
-> Task :app:compileReleaseKotlin
-w: file:///home/e/AndroidStudioProjects/BetafyApp/app/src/main/java/com/betafy/betafyapp/AppNavigation.kt:29:37 'fun <reified VM : ViewModel> hiltViewModel(viewModelStoreOwner: ViewModelStoreOwner = ..., key: String? = ...): VM' is deprecated. Moved to package: androidx.hilt.lifecycle.viewmodel.compose.
+> Task :feature:auth:presentation:compileReleaseKotlin
+w: file:///home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/src/main/java/com/betafy/feature/auth/presentation/LoginScreen.kt:43:32 'fun <reified VM : ViewModel> hiltViewModel(viewModelStoreOwner: ViewModelStoreOwner = ..., key: String? = ...): VM' is deprecated. Moved to package: androidx.hilt.lifecycle.viewmodel.compose.
+w: file:///home/e/AndroidStudioProjects/BetafyApp/feature/auth/presentation/src/main/java/com/betafy/feature/auth/presentation/RegisterScreen.kt:44:32 'fun <reified VM : ViewModel> hiltViewModel(viewModelStoreOwner: ViewModelStoreOwner = ..., key: String? = ...): VM' is deprecated. Moved to package: androidx.hilt.lifecycle.viewmodel.compose.
 
+> Task :feature:auth:presentation:processReleaseJavaRes
+> Task :feature:auth:presentation:mergeReleaseJavaResource
+> Task :feature:auth:presentation:compileReleaseJavaWithJavac
+> Task :feature:auth:presentation:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:auth:presentation:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:auth:presentation:bundleLibCompileToJarRelease
+> Task :feature:auth:presentation:bundleLibRuntimeToJarRelease
+> Task :feature:auth:presentation:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:auth:presentation:createFullJarRelease
+> Task :feature:auth:presentation:syncReleaseLibJars
+> Task :feature:auth:presentation:bundleReleaseLocalLintAar
+> Task :feature:auth:presentation:generateReleaseLintModel
+> Task :feature:auth:presentation:generateReleaseLintVitalModel
+> Task :feature:auth:presentation:bundleReleaseAar
+> Task :feature:auth:presentation:assembleRelease
+> Task :app:kspReleaseKotlin
+> Task :feature:auth:presentation:lintVitalAnalyzeRelease
+> Task :app:compileReleaseKotlin
 > Task :app:processReleaseJavaRes
 > Task :app:compileReleaseJavaWithJavac
 > Task :app:hiltSyncRelease
-> Task :app:hiltAggregateDepsRelease
-> Task :app:mergeReleaseJavaResource
 > Task :app:generateReleaseLintVitalReportModel
+> Task :app:hiltAggregateDepsRelease UP-TO-DATE
+> Task :app:mergeReleaseJavaResource
+> Task :app:lintVitalAnalyzeRelease
 > Task :app:hiltJavaCompileRelease
 > Task :app:transformReleaseClassesWithAsm
-> Task :app:mergeReleaseGeneratedProguardFiles
-> Task :app:expandReleaseArtProfileWildcards
-> Task :app:produceReleaseComposeMapping
-> Task :app:reportReleaseComposeMappingErrors
-> Task :app:lintVitalAnalyzeRelease
+> Task :app:mergeReleaseGeneratedProguardFiles UP-TO-DATE
 > Task :app:lintVitalReportRelease
 > Task :app:lintVitalRelease
+> Task :app:expandReleaseArtProfileWildcards
+> Task :app:produceReleaseComposeMapping
 > Task :app:minifyReleaseWithR8
+> Task :app:reportReleaseComposeMappingErrors
 > Task :app:convertShrunkResourcesToBinaryRelease
 > Task :app:optimizeReleaseResources
 > Task :app:mergeReleaseComposeMapping
 > Task :app:compileReleaseArtProfile
 > Task :app:packageRelease
 > Task :app:assembleRelease
-> Task :app:createReleaseApkListingFileRedirect
+> Task :app:createReleaseApkListingFileRedirect UP-TO-DATE
 
 [Incubating] Problems report is available at: file:///home/e/AndroidStudioProjects/BetafyApp/build/reports/problems/problems-report.html
 
-BUILD SUCCESSFUL in 5m 50s
-879 actionable tasks: 664 executed, 215 up-to-date
+BUILD SUCCESSFUL in 11m 58s
+894 actionable tasks: 243 executed, 651 up-to-date
 Configuration cache entry stored.

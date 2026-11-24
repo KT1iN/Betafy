@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.betafy.feature.auth.presentation-release-44:/drawable-ldpi-v4/ic_betafy_logo_vertical.png",
+        "source": "com.betafy.feature.auth.presentation-release-40:/drawable-ldpi-v4/ic_betafy_logo_vertical.png"
+    },
+    {
+        "merged": "com.betafy.feature.auth.presentation-release-44:/drawable-ldpi-v4/ic_betafy_mark.png",
+        "source": "com.betafy.feature.auth.presentation-release-40:/drawable-ldpi-v4/ic_betafy_mark.png"
+    }
+]

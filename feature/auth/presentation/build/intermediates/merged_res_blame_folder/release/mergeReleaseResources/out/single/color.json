@@ -1,10 +1,10 @@
 [
     {
-        "merged": "com.betafy.feature.auth.presentation-release-41:/color/vector_tint_color.xml",
-        "source": "com.betafy.feature.auth.presentation-ui-34:/color/vector_tint_color.xml"
+        "merged": "com.betafy.feature.auth.presentation-release-44:/color/vector_tint_theme_color.xml",
+        "source": "com.betafy.feature.auth.presentation-ui-36:/color/vector_tint_theme_color.xml"
     },
     {
-        "merged": "com.betafy.feature.auth.presentation-release-41:/color/vector_tint_theme_color.xml",
-        "source": "com.betafy.feature.auth.presentation-ui-34:/color/vector_tint_theme_color.xml"
+        "merged": "com.betafy.feature.auth.presentation-release-44:/color/vector_tint_color.xml",
+        "source": "com.betafy.feature.auth.presentation-ui-36:/color/vector_tint_color.xml"
     }
 ]
