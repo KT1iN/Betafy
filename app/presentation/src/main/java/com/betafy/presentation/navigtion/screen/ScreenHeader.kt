@@ -30,46 +30,58 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import com.betafy.betafyapp.core.uikit.theme.BetafyHeaderText
 import com.betafy.presentation.navigation.model.AccentRole
+import com.betafy.presentation.navigation.model.HeaderPart
 import com.betafy.presentation.navigation.model.NavigationBottomModel
 
 @Composable
 fun ScreenHeader(
     item: NavigationBottomModel,
-    modifier: Modifier = Modifier
+    userName: String = "",
+    modifier: Modifier = Modifier,
+    bell: (@Composable () -> Unit)? = null
 ) {
     val accentColors = AccentRole.entries.associateWith { it.colors().accent }
     val textColor = MaterialTheme.colorScheme.onSurface
     val captionColor = MaterialTheme.colorScheme.onSurfaceVariant
     val buttonColor = MaterialTheme.colorScheme.surfaceContainerHigh
 
-    AnimatedContent(
-        targetState = item,
-        modifier = modifier.fillMaxWidth(),
-        transitionSpec = {
-            (fadeIn(tween(300)) + slideInVertically(tween(300)) { it / 4 })
-                .togetherWith(fadeOut(tween(150)))
-        },
-        label = "header"
-    ) { target ->
-
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .statusBarsPadding()
-                .padding(horizontal = 20.dp, vertical = 12.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-
-            Column(Modifier.weight(1f)) {
-
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .statusBarsPadding()
+            .padding(horizontal = 20.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        AnimatedContent(
+            targetState = item,
+            modifier = Modifier.weight(1f),
+            transitionSpec = {
+                (fadeIn(tween(300)) + slideInVertically(tween(300)) { it / 4 })
+                    .togetherWith(fadeOut(tween(150)))
+            },
+            label = "header"
+        ) { target ->
+            Column {
                 Text(
                     text = target.caption,
                     style = BetafyHeaderText.caption,
                     color = captionColor
                 )
 
-                target.headerLines.forEach { line ->
-
+                val lines = if (
+                    target.route == NavigationBottomModel.Search.route &&
+                    userName.isNotBlank()
+                ) {
+                    listOf(
+                        listOf(
+                            HeaderPart("Привет, "),
+                            HeaderPart(userName, AccentRole.Lavender)
+                        )
+                    )
+                } else {
+                    target.headerLines
+                }
+                lines.forEach { line ->
                     Text(
                         text = buildAnnotatedString {
                             line.forEach { part ->
@@ -86,7 +98,11 @@ fun ScreenHeader(
                     )
                 }
             }
+        }
 
+        if (bell != null) {
+            bell()
+        } else {
             Box(
                 modifier = Modifier
                     .size(44.dp)
