@@ -12,15 +12,14 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.ime
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import com.betafy.betafyapp.core.uikit.theme.extendedColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -38,6 +37,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Popup
 import androidx.compose.ui.window.PopupPositionProvider
 import androidx.navigation.NavHostController
+import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -49,44 +49,53 @@ fun NavigationScreen(
     onLogout: () -> Unit,
     onCreateReader: () -> Unit = {},
     onCreateWriter: () -> Unit = {},
-    profileNotice: String = "",
     readerCreateEnabled: Boolean = true,
     writerCreateEnabled: Boolean = true,
+    userName: String = "",
+    chatsUnread: Int = 0,
+    bell: (@Composable (NavigationBottomModel, (String) -> Unit) -> Unit)? = null,
+    matchContent: @Composable () -> Unit = { PlaceholderScreen("Мэтч") },
+    chatsContent: @Composable (String?, Int) -> Unit = { _, _ -> PlaceholderScreen("Чаты") },
     navController: NavHostController = rememberNavController()
 ) {
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
     val currentItem = NavigationBottomModel.getNavItems()
         .firstOrNull { it.route == currentRoute } ?: NavigationBottomModel.Search
+    var chatMatchId by remember { mutableStateOf<String?>(null) }
+    var chatToken by remember { mutableStateOf(0) }
 
+    val keyboardOpen = WindowInsets.ime.getBottom(LocalDensity.current) > 0
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
-        bottomBar = { AppBottomBar(navController) }
+        bottomBar = {
+            if (!keyboardOpen) AppBottomBar(navController, chatsUnread)
+        }
     ) { innerPadding ->
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
-            ScreenHeader(item = currentItem)
-
-            if (profileNotice.isNotBlank()) {
-                val success = MaterialTheme.extendedColors.success
-                Surface(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 16.dp, vertical = 8.dp),
-                    shape = MaterialTheme.shapes.small,
-                    color = success.colorContainer,
-                    contentColor = success.onColorContainer
-                ) {
-                    Text(
-                        text = profileNotice,
-                        style = MaterialTheme.typography.bodyMedium,
-                        modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp)
-                    )
+            ScreenHeader(
+                item = currentItem,
+                userName = userName,
+                bell = bell?.let { slot ->
+                    {
+                        slot(currentItem) { matchId ->
+                            chatMatchId = matchId
+                            chatToken += 1
+                            navController.navigate(NavigationBottomModel.Chats.route) {
+                                popUpTo(navController.graph.findStartDestination().id) {
+                                    saveState = true
+                                }
+                                launchSingleTop = true
+                                restoreState = true
+                            }
+                        }
+                    }
                 }
-            }
+            )
 
             NavHost(
                 navController = navController,
@@ -94,8 +103,8 @@ fun NavigationScreen(
                 modifier = Modifier.weight(1f)
             ) {
                 composable(NavigationBottomModel.Search.route) { PlaceholderScreen("Поиск") }
-                composable(NavigationBottomModel.Match.route) { PlaceholderScreen("Мэтч") }
-                composable(NavigationBottomModel.Chats.route) { PlaceholderScreen("Чаты") }
+                composable(NavigationBottomModel.Match.route) { matchContent() }
+                composable(NavigationBottomModel.Chats.route) { chatsContent(chatMatchId, chatToken) }
                 composable(NavigationBottomModel.Profile.route) {
                     ProfilePlaceholder(
                         onLogout = onLogout,
